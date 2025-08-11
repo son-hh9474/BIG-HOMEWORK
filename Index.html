@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- gan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+
+        <!-- ===== Sidebar bên trái ===== -->
+        <aside class="sidebar">
+            <h2>MORENT</h2> <!-- Logo/tiêu đề -->
+    
+            <!-- Menu điều hướng -->
+            <h5>MAIN MENU</h5>
+            <nav>
+                <a href="#" class="active">
+                    <img src="images/home.png" alt="Dashboard" style="width:24px; height:24px; vertical-align:middle;">
+                    Dashboard
+                </a>
+                <a href="#">
+                    <img src="images/car.png" alt="Dashboard" style="width:24px; height:24px; vertical-align:middle;">
+                    Car Rent
+                </a>
+                <a href="#">Insight</a>
+                <a href="#">Reimburse</a>
+                <a href="#">Inbox</a>
+                <a href="#">Calendar</a>
+                <a href="#">Settings</a>
+                <a href="#" id="darkToggle">Dark Mode</a>
+                <a href="#">Log Out</a>
+            </nav>
+            <!-- Nút bật tắt Dark Mode -->
+                
+            
+        </aside>
+
+        <!-- ===== Nội dung chính ===== -->
+        <main class="main">
+
+            <!-- Thanh tìm kiếm -->
+            <div class="top-bar">
+                <input type="text" placeholder="Search something here...">
+            </div>
+
+            <!-- Lưới bố cục nội dung -->
+            <div class="content">
+                <!-- Khối thông tin thuê xe -->
+                <section class="rental-details">
+                    <h3>Details Rental</h3>
+                    <!-- Bản đồ giả -->
+                    <div class="map">
+                        <div class="route"></div>
+                    </div>
+                    <!-- Thông tin xe -->
+                    <div class="car-info">
+                        <img src="https://via.placeholder.com/100x50" alt="Nissan GT-R">
+                        <div>
+                            <h4>Nissan GT-R</h4>
+                            <p>Sport Car</p>
+                        </div>
+                    </div>
+                    <!-- Giá thuê -->
+                    <div class="price">
+                        Total Rental Price: <strong>$80.00</strong>
+                    </div>
+                </section>
+
+                <!-- Khối biểu đồ top xe thuê -->
+                <section class="top-cars">
+                    <h3>Top 5 Car Rental</h3>
+                    <!-- Canvas để vẽ biểu đồ -->
+                    <canvas id="pieChart" width="200" height="200"></canvas>
+                    <!-- Chú thích biểu đồ -->
+                    <ul class="legend">
+                        <li>Sport Car - 17,439</li>
+                        <li>SUV - 9,478</li>
+                        <li>Coupe - 18,197</li>
+                        <li>Hatchback - 12,510</li>
+                        <li>MPV - 14,406</li>
+                    </ul>
+                </section>
+
+                <!-- Bảng giao dịch gần đây -->
+                <section class="transactions">
+                    <h3>Recent Transaction</h3>
+                    <table>
+                        <tr><td>Nissan GT-R</td><td>$80.00</td></tr>
+                        <tr><td>Koenigsegg</td><td>$99.00</td></tr>
+                        <tr><td>Rolls-Royce</td><td>$96.00</td></tr>
+                        <tr><td>CR-V</td><td>$80.00</td></tr>
+                    </table>
+                </section>
+            </div>
+        </main>
+
+    </div>
+    <!-- Gắn file JS -->
+    <script src="script.js"></script>
+</body>
+</html>
