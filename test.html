@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Slider</title>
+<style>
+  body {
+    font-family: sans-serif;
+    background: #f5f5f5;
+  }
+
+  .slider-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory; /* để khi cuộn dừng gọn */
+    
+  }
+
+
+  .card {
+    flex: 0 0 auto; /* không co giãn, giữ nguyên kích thước */
+    width: 250px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    scroll-snap-align: start;
+    padding: 15px;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .card h3 {
+    margin: 10px 0 5px;
+  }
+
+  .price {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .btn {
+    display: block;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<h2>Recent Car</h2>
+<div class="slider-container">
+  <div class="card">
+    <img src="https://via.placeholder.com/250x150" alt="Car">
+    <h3>Koenigsegg</h3>
+    <p class="price">$99/day</p>
+    <a href="#" class="btn">Rental Now</a>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/250x150" alt="Car">
+    <h3>Nissan GT</h3>
+    <p class="price">$80/day</p>
+    <a href="#" class="btn">Rental Now</a>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/250x150" alt="Car">
+    <h3>CR-V</h3>
+    <p class="price">$80/day</p>
+    <a href="#" class="btn">Rental Now</a>
+    
+  </div>
+</div>
+
+</body>
+</html>

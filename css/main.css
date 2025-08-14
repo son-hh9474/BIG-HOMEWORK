@@ -2,8 +2,140 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+.header {
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 8.533vw 6.133vw 8.533vw 6.666vw;
+    gap: 8.533vw;
+}
+
+.button-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+    width: 6.4vw;
+    outline: none;
+    border: none;
+}
+
+.image-profile {
+    width: 7.466vw;
+}
+
+.button--hamburger {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: #FFFFFF;
+}
+
+.image-profile--mobile {
+    max-width: 100%;
+    height: auto;
+} 
+
+.header .logo {
+    width: 28.8vw;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 6.4vw;
+    color: #3563E9;
+}
+
+.seach-mobile {
+    display: flex;
+    justify-content: space-between;
+    width:  100%;    
+    gap: 4.266vw;
+}
+
+.seach__input {
+    text-align: center;
+    max-width: 100%;
+    border-radius: 2.666vw;
+    border: 0.266vw solid #C3D4E966;
+    flex: 1 1 auto;
+    color: #90A3BF;
+    font-size: 3.733vw;
+    font-weight: 500;
+
+}
+
+.seach__filters {
+    width: 12.8vw;
+}
+
+.seach__filters--mobile {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.seach__filters--mobile:hover {
+    scale: 1.1;
+}
+
+.seach-desktop  {
+    display: none;
+}
+
+
+.main-content {
+    background-color: #F6F7F9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-car {
+    display: flex;
+    flex-direction: column;
+    gap: 8.53vw;
+}
+
+.detail-car__images {
+    width: 87.2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4vw;
+}
+
+.images__main {
+    max-width: 100%;
+    height: auto;
+}
+
+.images__gallery {
+    display: flex;
+    gap: 5.333vw;
+}
+
+.images__gallery__item {
+    width: 25.6vw;
+    flex-grow: 1;
+}
+
+
+.detail-car__decription {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+
