@@ -29,10 +29,14 @@ body {
     width: 6.4vw;
     outline: none;
     border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .image-profile {
     width: 7.466vw;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .button--hamburger {
@@ -53,6 +57,11 @@ body {
     font-weight: bold;
     font-size: 6.4vw;
     color: #3563E9;
+    transition: all 0.2s ease;
+}
+
+.header .logo:hover {
+    opacity: 0.5;
 }
 
 .seach-mobile {
@@ -86,7 +95,15 @@ body {
 }
 
 .seach__filters--mobile:hover {
-    scale: 1.1;
+    scale: 1.2;
+}
+
+.button:hover {
+    scale: 1.2;
+}
+
+.image-profile:hover {
+    scale: 1.2;
 }
 
 .seach-desktop  {
@@ -128,14 +145,141 @@ body {
 .images__gallery__item {
     width: 25.6vw;
     flex-grow: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.images__gallery__item:hover {
+    scale: 1.2;
 }
 
 
+
 .detail-car__decription {
+    width: 87.2vw;
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
     border-radius: 10px;
+    padding: 4.266vw;
+    gap: 4.266vw;
+}
+
+.detail-car__info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.car-name {
+    width: 46.4vw;
+    font-weight: bold;
+    font-size: 5.066vw;
+}
+
+.review-info {
+    display: flex;
+    width: 46.4vw; 
+    gap: 2.133vw;
+}
+
+.review-info .star {
+    width: 20.266vw;
+    max-width: 100%;
+    height: auto;
+}
+
+.number-reviewer {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.detail-car__introduction {
+    font-weight: 400;
+    font-size: 3.2vw;
+    line-height: 6.4vw;
+    color: #90A3BF;
+}
+
+.detail-car__car-data {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4.266vw;
+}
+
+.car-data__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.266vw;
+}
+
+.car-data__container_item {
+    width: 33.066vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-data__container__title {
+    width: 13.866vw;
+    font-weight: 500;
+    color: #90A3BF;
+    font-size: 3.2vw;
+}
+.car-data__container__parameter {
+    width: 13.866w;
+    font-weight: 600;
+    color: #1A202C;
+    font-size: 3.2vw;
+    text-align: right;
+}
+
+.detail-car__price {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price__info {
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-current {
+    display: flex;
+    align-items: end;
+    font-weight: bold;
+    font-size: 5.333vw;
+    color: #1A202C;
+}
+
+.price-old, .per {
+    font-size: 3.2vw;
+    color: #90A3BF;
+    font-weight: 700;
+}
+
+.price-old {
+    text-decoration: line-through;
+}
+
+.rent-button {
+    width: 37.333vw;
+    text-decoration: none;
+    text-align: justify;
+    border-radius: 1.066vw;
+    background-color: #3563E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rent-link {
+    text-decoration: none;
+    text-align: justify;
+    color: #FFFFFF;
+    font-size: 4.266vw;
+    font-weight: bold;
 }
 
 

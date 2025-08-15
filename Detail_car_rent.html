@@ -13,22 +13,31 @@
 <body>
     <div class="container">
         <header class="header">
+            
             <div class="button-and-image">
+
+                <!-- nút hamburger giao diện mobile -->
                 <button class="button">
                     <img src="images/header_images/menu.png" alt="Button Hamburger" class="button--hamburger">
                 </button>
 
+                <!-- ảnh profile  -->
                 <a href="" class="image-profile">
                     <img src="images/header_images/Image.png" alt="Image Profile" class="image-profile--mobile">
                 </a>
             </div>
+
+            <!-- nút logo dẫn đến trang chủ -->
             <a href="Detail_car_rent.html" class="logo">MORENT</a>
             <div class="seach-mobile">
+                <!-- thanh tìm kiếm -->
                 <input type="text" class="seach__input" placeholder="Search something here">
+                <!-- nút filters -->
                 <div class="seach__filters">
                     <img src="images/header_images/Filter.png" alt="Filters Icon" class="seach__filters--mobile">
                 </div>
             </div>
+            <!-- thanh tìm kiếm dành cho màn hình desktop -->
             <div class="seach-desktop">
                 <img src="images/header_images/search-normal.png" alt="Seach Icon" class="seach__icon">
                 <input type="text" placeholder="Search something here" class="seach__input">
@@ -36,8 +45,11 @@
             </div>
         </header>
 
+        <!-- phần nội dung body -->
         <main class="main-content">
+            <!-- khối nội dung giới thiệu và mô tả về xe -->
             <div class="detail-car">
+                <!-- ảnh xe -->
                 <div class="detail-car__images">
                     <img class="images__main" src="images/main_content/detail_car/Ads.png" alt="main image">
                     <div class="images__gallery">
@@ -46,19 +58,25 @@
                         <img src="images/main_content/detail_car/Look 2.png" alt="look 3" class="images__gallery__item">
                     </div>
                 </div>
+                <!-- mô tả và giới thiệu xe -->
                 <div class="detail-car__decription">
+                    <!-- tên xe -->
                     <div class="detail-car__info">
                         <p class="car-name">Nissan GT - R</p>
                         <div class="review-info">
-                            <img src="" alt="" class="star">
+                            <img src="images/main_content/car_decription/star.png" alt="rate" class="star">
                             <p class="number-reviewer">440+ Reviewer</p>
                         </div>
                     </div>
-
-                    <p class="detail-car__introduction"></p>
+                    <!-- giới thiệu về xe -->
+                    <p class="detail-car__introduction">NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".</p>
+                    <!-- thông số xe -->
                     <div class="detail-car__car-data">
+                        <!-- container của hai dòng thông số -->
                         <div class="car-data__container">
+                            <!-- container của một thông số -->
                             <div class="car-data__container_item">
+                                <!-- thông số -->
                                 <div class="car-data__container__title">Type Car</div>
                                 <div class="car-data__container__parameter">Sport</div>
                             </div>
@@ -78,71 +96,79 @@
                             </div>
                         </div>
                     </div>
+                    <!-- giá thành  xe -->
                     <div class="detail-car__price">
                         <div class="price__info">
                             <div class="price-current">
-                                $80.00/ <div class="per">days</div>
+                                $80.00/<div class="per">days</div>
                             </div>
                             <div class="price-old">$100.00</div>
                         </div>
-
-                        <a href="https://www.youtube.com/watch?v=BBJa32lCaaY&list=RDBBJa32lCaaY&start_radio=1&pp=ygUPcmljayByb2xsIHNvdW5koAcB" class="rent-button">Rent Now</a>
+                        <div class="rent-button">
+                            <a href="https://www.youtube.com/watch?v=BBJa32lCaaY&list=RDBBJa32lCaaY&start_radio=1&pp=ygUPcmljayByb2xsIHNvdW5koAcB" class="rent-link">Rent Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <!-- nội dung review đánh giá xe -->
             <div class="reviews">
-                <div class="reviews__total"></div>
+                <div class="reviews__total">
+                    <p class="reviews__total--content">Reviews</p>
+                    <p class="reviews__total--number">13</p>
+                </div>
                 <div class="reviews__review">
                     <div class="reviewer">
-                        <img src="" alt="" class="reviewer__image">
+                        <img src="images/main_content/review/Profil.png" alt="avatar" class="reviewer__image">
 
                         <div class="reviewer__container">
                             <div class="profile">
                             
                                 <div class="profile__info">
-                                    <p class="name-reviewer"></p>
-                                    <p class="job-reviewer"></p>
+                                    <p class="name-reviewer">Alex Stanton</p>
+                                    <p class="job-reviewer">CEO at Bukalapak</p>
                                 </div>
 
                                 <div class="rate__info">
-                                    <p class="day"></p>
-                                    <img src="" alt="" class="star">
+                                    <p class="day">21 July 2022</p>
+                                    <img src="images/main_content/review/Review.png" alt="rate" class="star">
                                 </div>
 
                             </div>
 
                             <p class="comment">
-
+                                We are very happy with the service from the MORENT App. Morent has a low price . . .
                             </p>
                         </div>
 
                     </div>
                     <div class="reviewer">
-                        <img src="" alt="" class="reviewer__image">
+                        <img src="images/main_content/review/profil2.png" alt="avatar" class="reviewer__image">
                         <div class="reviewer__container">
                             <div class="profile">
                             
                                 <div class="profile__info">
-                                    <p class="name-reviewer"></p>
-                                    <p class="job-reviewer"></p>
+                                    <p class="name-reviewer">Skylar Dias</p>
+                                    <p class="job-reviewer">CEO at Amazon</p>
                                 </div>
 
                                 <div class="rate__info">
-                                    <p class="day"></p>
-                                    <img src="" alt="" class="star">
+                                    <p class="day">20July 2022</p>
+                                    <img src="images/main_content/review/Review.png" alt="rate" class="star">
                                 </div>
 
                             </div>
 
                             <p class="comment">
-                                
+                                We are greatly helped by the services of the MORENT Application. Morent has a low . . .
                             </p>
                         </div>
                     </div>
                 </div>
+                <div class="reviews__button-show-all">
+                    <button class="button-show-all">Show All V</button>
+                </div>
             </div>
-
+            <!-- danh sách các xe phổ biến gần đây -->
             <div class="car-lists car-lists--recent">
                 <div class="car-lists__title">
                     <p class="car-lists__title__item1"></p>
@@ -263,7 +289,7 @@
                     
                 </div>
             </div>
-
+            <!-- danh sách xe gợi ý -->
             <div class="car-lists car-lists--recomendation">
                 <div class="car-lists__title">
                     <p class="car-lists__title__item1"></p>
@@ -385,6 +411,7 @@
             </div>
         </main>
 
+        <!-- phần footer của trang web -->
         <footer class="footer">
             <div class="title">
                 <a href="Detail_car_rent.html" class="logo">MORENT</a>
