@@ -117,12 +117,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8.533vw;
 }
 
 .detail-car {
     display: flex;
     flex-direction: column;
     gap: 8.53vw;
+    padding-top: 8.533vw;
+    width: 87.2vw;
 }
 
 .detail-car__images {
@@ -160,7 +163,7 @@ body {
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 2.666vw;
     padding: 4.266vw;
     gap: 4.266vw;
 }
@@ -280,6 +283,144 @@ body {
     color: #FFFFFF;
     font-size: 4.266vw;
     font-weight: bold;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 2.666vw;
+    width: 87.2vw;
+    padding: 4.266vw;
+    gap: 6.4vw;
+}
+
+.reviews__total {
+    display: flex;
+    gap: 3.2vw;
+    
+}
+
+.reviews__total--content {
+    color: #1A202C;
+    font-weight: 600;
+    font-size: 5.333vw;
+}
+
+.reviews__total--container {
+    display: flex;
+    color:#FFFFFF;
+    background: #3563E9;
+    border-radius: 1.066vw;
+    width: 11.733vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.reviews__total--number {
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 3.733vw;
+}
+
+
+.reviews__review {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+}
+
+.reviewer {
+    display: flex;
+    gap: 2.133vw;
+}
+
+.reviewer__container--image {
+    width: 11.733vw;  
+    flex: none;
+}
+
+.reviewer__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.reviewer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.266vw;
+    flex-grow: 1;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile__info, .rate__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.133vw;
+}
+
+.name-reviewer {
+    font-size: 4.266vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.job-reviewer, .day {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.rate__info {
+    text-align: right;
+}
+
+.rate__container {
+    width: 20.266vw;
+}
+
+.star {
+    max-width: 100%;
+    height: auto;
+}
+
+.comment--desktop {
+    display: none;
+}
+
+.comment--mobile {
+    color: #90A3BF;
+    font-size: 3.2vw;
+    font-weight: 400;
+}
+
+.reviews__button-show-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.133vw;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.reviews__button-show-all:hover {
+    opacity: 0.8;
+    scale: 1.2;
+}
+
+
+.button-show-all {
+    width: 34.666vw;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 3.733vw;
+    font-weight: 500;
+    color: #90A3BF;
 }
 
 
