@@ -414,8 +414,8 @@ body {
 }
 
 
-.button-show-all {
-    width: 34.666vw;
+.text-show-all {
+    width: 18.133vw;
     border: none;
     background-color: #FFFFFF;
     font-size: 3.733vw;
@@ -423,4 +423,48 @@ body {
     color: #90A3BF;
 }
 
+.arrow-down-container {
+    width: 3.733vw;
+}
+
+.arrow-down {
+    max-width: 100%;
+    height: auto;
+}
+
+.car-lists {
+    width: 87.2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+} 
+
+.car-lists__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-lists__title__item1 {
+    font-size: 3.733vw;
+    font-weight: 600;
+    color: #90A3BF;
+}
+.car-lists__title__item2 {
+    font-size: 3.2vw;
+    font-weight: 600;
+    color: #3563E9;
+}
+
+.car-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 5.333vw;
+}
+
+.car-lists__item {
+    padding: 4.266vw;
+    background-color: #FFFFFF;
+    border-radius: 2.666vw;
+}
 
