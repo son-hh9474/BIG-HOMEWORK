@@ -5,12 +5,16 @@
     font-size: 16px;
 }
 
+.container {
+    max-width: 100%;
+}
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -37,6 +41,7 @@ body {
     width: 7.466vw;
     transition: all 0.3s ease;
     cursor: pointer;
+    display: none;
 }
 
 .button--hamburger {
@@ -112,6 +117,16 @@ body {
 
 
 .main-content {
+    width: 100vw;
+    display: flex;
+}
+
+.side-bar {
+    display: none;
+    border-right: 1px solid #C3D4E966;
+}
+
+.content-container {
     background-color: #F6F7F9;
     width: 100%;
     display: flex;
@@ -398,6 +413,8 @@ body {
 
 .comment--desktop {
     display: none;
+    color: #90A3BF;
+    font-weight: 400;
 }
 
 .comment--mobile {
@@ -410,7 +427,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.133vw;
     transition: all 0.2s ease;
     cursor: pointer;
 }
@@ -461,6 +477,12 @@ body {
     font-size: 3.2vw;
     font-weight: 600;
     color: #3563E9;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.car-lists__title__item2:hover {
+    opacity: 0.5;
 }
 
 .car-list {
@@ -518,12 +540,13 @@ body {
 .product-image-container {
     width: 55.466vw;
     position: relative;
-    display: flex;
     justify-content: center;
 }
 
 .product-container {
-    width: 48vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .product-image {
@@ -533,7 +556,7 @@ body {
 .shadow-container {
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -4vw;
 }
 
 .shadow-image {
@@ -610,6 +633,7 @@ body {
     width: 26.666vw;
     height: 9.6vw;
     display: flex;
+    flex: none;
     justify-content: center;
     align-items: center;
     background-color: #3563E9;
@@ -636,6 +660,13 @@ body {
     flex-direction: column;
     gap: 12.8vw;
     padding: 6.4vw;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12.8vw;
+
 }
 
 .title {
@@ -714,3 +745,492 @@ body {
     color: #1A202C;
 }
 
+
+@media (min-width: 1024px) {
+
+    .header {
+        flex-direction: row;
+        border: 1px solid #C3D4E966;
+        padding: 2.777vw 2.222vw 2.777vw 4.166vw;
+        justify-content: space-between;
+        
+    }
+
+
+    .button-and-image {
+        width: 16.388vw;
+        gap: 1.388vw;
+        order: 3;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .image-profile {
+        width: 11.733vw;
+        display: block;
+    }
+
+    .header .logo {
+        width: 10.277vw;
+        order: 1;
+        font-size: 2.222vw;
+
+    }
+
+    .seach-mobile {
+        display: none;
+    }
+
+    .seach-desktop {
+        flex: none;
+        width: 34.166vw;
+        display: flex;
+        align-items: center;
+        border: 1px solid #C3D4E966;
+        border-radius: 4.861vw;
+        order: 2;
+        padding: 0.694vw;
+        gap: 1.388vw;
+    }
+
+    .seach__icon {
+        width: 1.666vw;
+        max-width: 100%;
+        height: auto;
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+
+    .seach__icon:hover {
+        opacity: 0.5;
+    }
+
+    .seach__input {
+        border: none;
+        font-size: 0.972vw;
+        text-align: left;
+        outline: none;
+    }
+
+
+
+    .side-bar  {
+        width: 25vw ;
+        display: flex;
+        flex: none;
+        flex-direction: column;
+        gap: 3.888vw;
+        padding: 2.222vw;
+    }
+
+    .side-bar__element--container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.944vw;
+    }
+
+    .element__title {
+        font-size: 0.833vw;
+        font-weight: 600;
+        color: #90A3BF;
+    }
+
+    .element--type1__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.222vw;
+    }
+
+    .item-container {
+        display: flex;
+        gap: 0.555vw;
+        align-items: center;
+    }
+
+
+    .tick {
+        -webkit-appearance: none;
+        -moz-appearance: none;    
+        appearance: none;        
+        width: 1.388vw;
+        height: 1.388vw;
+        border: 1px solid #90A3BF;
+        border-radius: 0.347vw;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .tick:checked {
+        background-color: #3563E9;
+    }
+
+    .tick:checked::after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    width: 0.347vw;
+    height: 0.694vw;
+    border: solid white;
+    border-width: 0 0.208vw 0.208vw 0;
+    transform: rotate(45deg);
+    }
+
+    .element-content {
+        font-weight: 600;
+        font-size: 1.388vw;
+        color: #1A202C;
+    }
+
+    .number {
+        font-weight: 600;
+        color: #90A3BF;
+        font-size: 1.388vw;
+    }
+
+    .element--type2__container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.833vw;
+    }
+
+
+    .content-container {
+        padding: 2.222vw;
+        gap: 2.222vw;
+        align-items: unset;
+        width: 75vw;
+    }
+
+    .detail-car {
+        width: 70.55vw;
+        flex-direction: row;
+        padding: 0;
+        gap: 2.222vw;
+        
+    }
+
+    .detail-car__images {
+        width: 34.166vw;
+        gap: 1.666vw;
+    }
+
+    .detail-car__decription {
+        width: 34.166vw;
+        border-radius: 0.694vw;
+        gap: 1.666vw;
+        padding: 1.666vw;
+    }
+
+    .images__gallery {
+        gap: 1.666vw;
+    }
+
+    .images__gallery__item {
+        width: 10.277vw;
+    }
+
+    .car-name {
+        width: 15.277vw;
+        font-size: 2.222vw;  
+    }
+
+    .review-info {
+        width: 15.277vw;
+        gap: 0.555vw;
+    }
+
+    .review-info .star {
+        width: 7.5vw;
+    }
+
+    .number-reviewer {
+        font-size: 0.972vw;
+    }
+    
+    .detail-car__introduction {
+        font-size: 1.388vw;
+        line-height: 2.111vw;
+    }
+
+    .car-data__container {
+        gap: 1.111vw;
+    }
+
+    .car-data__container_item {
+        width: 13.888vw;
+    }
+
+    .car-data__container__title {
+        width: 6.388vw;
+        font-size: 1.388vw;
+    }
+
+    .car-data__container__parameter {
+        width: 6.388vw;
+        font-size: 1.388vw;
+    }
+
+    .price__info {
+        width: 13.888vw;
+    }
+
+    .price-current {
+        font-size: 1.944vw;
+    }
+
+    .price-old, .per {
+        font-size: 1.111vw;
+    }
+
+    .rent-button {
+        width: 9.722vw;
+        border-radius: 0.277vw;
+    }
+
+    .rent-link {
+        font-size: 1.111vw;
+    }
+
+    .reviews {
+        border-radius: 0.694vw;
+        width: 70.555vw;
+        padding: 1.666vw;
+        gap: 2.222vw;
+    }
+
+    .reviews__total {
+        gap: 0.833vw;
+    }
+
+    .reviews__total--content {
+        font-size: 1.388vw;
+    }
+
+    .reviews__total--container {
+        width: 3.055vw;
+        border-radius: 0.277vw;
+    }
+
+    .reviews__total--number {
+        font-size: 0.972vw;
+    }
+
+    .reviews__review {
+        gap: 1.666vw;
+    }
+
+    .reviewer {
+        gap: 1.111vw;
+    }
+
+    .reviewer__container--image {
+        width: 3.888vw;
+    }
+
+    .reviewer__container {
+        gap: 0.833vw;
+    }
+
+    .profile__info, .rate__info {
+        gap: 0.555vw;
+    }
+
+    .name-reviewer {
+        font-size: 1.388vw;
+    }
+
+    .job-reviewer, .day {
+        font-size: 0.972vw;
+    }
+
+    .rate__container {
+        width: 7.5vw;
+    }
+
+    .comment--mobile {
+        display: none;
+    }
+
+    .comment--desktop {
+        display: block;
+        color: #1A202C;
+        font-size: 0.972vw;
+    }
+
+    .reviews__button-show-all {
+        gap: 0.555vw;
+    }
+
+    .text-show-all {
+        width: 9.166vw;
+        font-size: 1.111vw;
+    }
+
+    .arrow-down-container {
+        width: 1.111vw;
+    }
+
+    .car-list {
+        gap: 2.222vw;
+        scroll-snap-type: unset;
+        overflow-x: unset;
+        flex-wrap: wrap;
+    }
+
+    .car-lists__item{
+        width: 22.013vw;
+        padding: 1.666vw;
+        border-radius: 0.694vw;
+        scroll-snap-align: unset;
+    }
+
+    .car-lists__title__item1, .car-lists__title__item2 {
+        width: 12vw;
+        height: 3.055vw;
+        font-size: 1.111vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+
+    .car-lists {
+        width: 70.555vw;
+        gap: 2.222vw;
+    }
+
+    .car-lists__item {
+        padding: 1.666vw;
+        gap: 2.5vw;
+    }
+
+    .like-container{
+        width: 1.666vw;
+    }
+
+    .car-lists__car-name {
+        gap: 0.277vw;
+    }
+
+    .name {
+        font-size: 1.388vw;
+    }
+    
+    .type {
+        font-size: 0.972vw;
+    }
+
+    .product-image-container {
+        width: 18.888vw;
+    }
+
+    .product-container {
+        width: 18.68vw;
+    }
+
+    .shadow-container {
+        bottom: -1.041vw;
+    }
+
+    .car-lists__item__spesification {
+        gap: 1.180vw;
+    }
+
+    .spesification__container {
+        gap: 0.555vw;
+    }
+
+    .icon-container {
+        width: 1.666vw;
+    }
+
+    .spesification__container__parameter {
+        font-size: 0.972vw;
+    }
+
+    .price-info {
+        width: 8.888vw;
+        gap: 0.277vw;
+    }
+    
+    .car-lists--price-current {
+        font-size: 1.388vw;
+    }
+
+    .car-lists--price-current .per, .car-lists--price-old {
+        font-size: 0.972vw;
+    }
+
+    .car-lists__rent-car-button {
+        width: 8.055vw;
+        height: 3.055vw;
+        border-radius: 0.277vw;
+    }
+
+    .rent-car-button {
+        font-size: 1.111vw;
+    }
+
+    .footer {
+        background-color: #FFFFFF;
+        padding: 5.555vw 4.166vw 4.166vw 4.166vw;
+        gap: 2.5vw;
+    }
+
+    .contact-container {
+        flex-direction: row;
+        justify-content: space-between  ;
+    }
+
+    .title {
+        width: 20.277vw;
+        gap: 1.111vw;
+    }
+
+    .logo {
+        font-size: 2.222vw;
+    }
+
+    .text {
+        font-size: 1.111vw;
+    }
+
+    .resources {
+        gap: 4.166vw;
+    }
+
+    .resources__about, .resources__community, .resources__socials {
+        gap: 1.666vw;
+        margin: 0;
+    }
+
+    .resources__about, .resources__community, .resources__socials{
+        width: 10.555vw;
+    }
+
+    .resources__title {
+        font-size: 1.388vw;
+    }
+
+    .resources__item {
+        font-size: 1.111vw;
+    }
+
+    .legal-link-container {
+        border-top: 1px solid #13131329;
+        padding-top: 2.5vw;
+        flex-direction: row-reverse;
+        gap: unset;
+        justify-content: space-between;
+    }
+    
+    .legal-link__item, .copyright { 
+        font-size: 1.111vw;
+    }
+
+}
