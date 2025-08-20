@@ -937,7 +937,7 @@ body {
     }
 
     .review-info {
-        width: 15.277vw;
+        width: 20vw;
         gap: 0.555vw;
     }
 
@@ -952,6 +952,11 @@ body {
     .detail-car__introduction {
         font-size: 1.388vw;
         line-height: 2.111vw;
+    }
+
+    .detail-car__car-data {
+        
+        padding-bottom: 2.5vw;
     }
 
     .car-data__container {
