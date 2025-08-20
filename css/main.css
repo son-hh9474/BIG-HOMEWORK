@@ -1,0 +1,264 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.header {
+    width: 100vw;
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 8.533vw 6.133vw 8.533vw 6.666vw;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 28.8vw;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    font-size: 6.4vw;
+    color: #3563E9;
+    transition: all 0.2s ease;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.button-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-profile {
+    width: 7.466vw;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: none;
+}
+
+.image-profile:hover {
+    scale: 1.2;
+}
+
+.image-profile--mobile {
+    max-width: 100%;
+    height: auto;
+} 
+
+.main-content {
+    width: 100vw;
+    background-color: #F6F7F9;
+}
+
+.active {
+    display: block;
+}
+
+
+
+
+
+
+
+
+.footer {
+    width: 100vw;
+    display: flex;
+    background-color: #F6F7F9;
+    flex-direction: column;
+    gap: 12.8vw;
+    padding: 6.4vw;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12.8vw;
+
+}
+
+.title {
+    width: 57.6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4.266vw;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.resources {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.resources__about, .resources__community, .resources__socials {
+    margin-bottom: 12.4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4.266vw;
+}
+
+.resources__about {
+    width: 37.866vw;
+
+}
+
+
+.resources__socials {
+    width: 32vw;
+}
+
+.resources__community {
+    width: 32vw;
+    margin: 0;
+}
+
+.resources__title {
+    font-size: 5.333vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.resources__item {
+    color: #90A3BF;
+    font-size: 4.266vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.resources__item:hover {
+    opacity: 0.5;
+}
+
+.legal-link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8.533vw;
+}
+
+.legal-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal-link__item, .copyright {
+    font-size: 3.2vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .header {
+        flex-direction: row;
+        border: 1px solid #C3D4E966;
+        padding: 2.777vw 2.222vw 2.777vw 4.166vw;
+        justify-content: space-between;
+        
+    }
+
+    .button-and-image {
+        width: 16.388vw;
+        gap: 1.388vw;
+    }
+
+    .image-profile {
+        width: 11.733vw;
+        display: block;
+    }
+
+    .header .logo {
+        width: 10.277vw;
+        font-size: 2.222vw;
+
+    }
+
+
+
+
+    /* footer  */
+    .footer {
+        background-color: #FFFFFF;
+        padding: 5.555vw 4.166vw 4.166vw 4.166vw;
+        gap: 2.5vw;
+    }
+
+    .contact-container {
+        flex-direction: row;
+        justify-content: space-between  ;
+    }
+
+    .title {
+        width: 20.277vw;
+        gap: 1.111vw;
+    }
+
+    .logo {
+        font-size: 2.222vw;
+    }
+
+    .text {
+        font-size: 1.111vw;
+    }
+
+    .resources {
+        gap: 4.166vw;
+    }
+
+    .resources__about, .resources__community, .resources__socials {
+        gap: 1.666vw;
+        margin: 0;
+    }
+
+    .resources__about, .resources__community, .resources__socials{
+        width: 10.555vw;
+    }
+
+    .resources__title {
+        font-size: 1.388vw;
+    }
+
+    .resources__item {
+        font-size: 1.111vw;
+    }
+
+    .legal-link-container {
+        border-top: 1px solid #13131329;
+        padding-top: 2.5vw;
+        flex-direction: row-reverse;
+        gap: unset;
+        justify-content: space-between;
+    }
+    
+    .legal-link__item, .copyright { 
+        font-size: 1.111vw;
+    }
+}
