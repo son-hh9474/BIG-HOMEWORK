@@ -30,7 +30,7 @@ body {
 }
 
 .button {
-    width: 6.4vw;
+    width: 8vw;
     outline: none;
     border: none;
     cursor: pointer;
@@ -49,6 +49,7 @@ body {
     height: auto;
     display: block;
     background-color: #FFFFFF;
+    
 }
 
 .image-profile--mobile {
@@ -198,14 +199,15 @@ body {
 
 .review-info {
     display: flex;
-    width: 46.4vw; 
     gap: 2.133vw;
+    align-items: center;
 }
 
 .review-info .star {
+    flex: none;
     width: 20.266vw;
     max-width: 100%;
-    height: auto;
+    height: 3.2vw;
 }
 
 .number-reviewer {
@@ -943,6 +945,7 @@ body {
 
     .review-info .star {
         width: 7.5vw;
+        height: unset;
     }
 
     .number-reviewer {
@@ -955,7 +958,7 @@ body {
     }
 
     .detail-car__car-data {
-        
+
         padding-bottom: 2.5vw;
     }
 
