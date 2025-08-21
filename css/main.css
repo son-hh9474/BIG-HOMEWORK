@@ -121,6 +121,12 @@
     color: #1A202C;
 }
 
+.content-product__rate {
+    display: flex;
+    flex-direction: column;
+    gap: 1.066vw;
+}
+
 .star {
     width: 20.266vw;
     max-width: 100%;
@@ -267,7 +273,6 @@
 
 .order-step {
     flex: none;
-    width: 17.066vw;
 }
 
 .Billing-Info {
@@ -310,6 +315,7 @@
     flex-direction: column;
     gap: 6.4vw;
     background-color: #FFFFFF;
+    border-radius: 2.666vw;
 }
 
 .pick-up-info {
@@ -321,6 +327,12 @@
 .pick-up-info__title {
     display: flex;
     gap: 2.133vw;
+}
+
+.pick-up-info__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
 }
 
 .pick-up-info__field {
@@ -354,6 +366,7 @@
     padding: 4.266vw;
     background-color: #FFFFFF;
     gap: 6.4vw;
+    border-radius: 2.666vw;
 }
 
 .credit-card {
@@ -362,6 +375,12 @@
     padding: 4.266vw;
     border-radius: 2.666vw;
     background-color: #F6F7F9;
+    gap: 5.333vw;
+}
+
+.credit-card-info {
+    display: flex;
+    flex-direction: column;
     gap: 5.333vw;
 }
 
@@ -385,8 +404,12 @@
     align-self: center;
 }
 
+.drop-off {
+    background-color: #54A6FF;
+    border-color: #cee7fe;
+}
+
 .title-content {
-    width: 24vw;
     font-weight: 600;
     font-size: 4.266vw;
     color: #1A202C;
@@ -402,8 +425,6 @@
     max-width: 100%;
     height: 4.266vw;
     width: 12.8vw;
-    
-    
 }
 
 .mc-icon {
@@ -445,6 +466,8 @@
     display: flex;
     justify-content: space-between;
     padding: 4.266vw;
+    background-color: #F6F7F9;
+    border-radius: 2.666vw;
 }   
 
 .credit-card--button .content {
@@ -465,7 +488,7 @@
 
 .choose-button:checked {
     background-color: #3563E9;
-    border: #3563E9;
+    border: 0.4vw solid #3563E9;
 }
 
 .credit-card--button .content .name {
@@ -525,7 +548,7 @@
 
 .Confirmation-form__agreement .agree-button:checked {
     background-color: #3563E9;
-    border: #3563E9;
+    border-color: #3563E9;
 }
 
 .Confirmation-form__agreement .agree-button:checked:after {
@@ -561,7 +584,6 @@
     font-weight: 600;   
     text-decoration: none;
     background-color: #3563E9;
-    
     margin-bottom: 2.133vw;
 }
 
@@ -721,8 +743,354 @@
     }
 
     /* main content */
-    
 
+    .main-content {
+        flex-direction: row-reverse;
+        padding: 2.222vw;
+        gap: 2.222vw;
+    }
+
+    .Rental-Summary {
+        padding: 1.666vw;
+        gap: 2.222vw;
+        border-radius: 0.694vw;
+        width: 34.166vw;
+        height: fit-content;
+    }
+
+    .Rental-Summary .title {
+        gap: 0.277vw;
+    }
+
+    .Rental-Summary .title__target {
+        font-size: 1.388vw;
+    }
+
+    .Rental-Summary .title__info {
+        font-size: 0.972vw;
+    }
+
+    .content-product {
+        gap: 1.111vw;
+    }
+
+    .content-product__image {
+        width: 9.166vw;
+    }
+
+    .content-product__info {
+        gap: 0.555vw;
+    }
+
+    .content-product__name {
+        font-size: 2.222vw;
+    }
+
+    .content-product__rate {
+        flex-direction: row;
+    }
+
+    .star {
+        width: 7.5vw;
+    }
+
+    .number-review {
+        font-size: 0.972vw;
+    }
+
+    .price {
+        padding-top: 2.222vw;
+        border-top: 1px solid #C3D4E966;
+    }
+
+    .subtotal, .tax {
+        font-size: 1.111vw;
+    }
+
+    .money {
+        font-size: 1.111vw;
+    }
+
+
+    .Promo {
+        padding: 1.458vw 2.222vw 1.458vw 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .Promo__code {
+        font-size: 0.972vw;
+    }
+
+    .Promo__submit {
+        font-size: 1.111vw;
+    }
+
+    .total-price__content {
+        gap: 0.277vw;
+    }
+
+    .total-price__content__title {
+        font-size: 1.388vw;
+    }
+
+    .total-price__content__rental {
+        font-size: 0.972vw;
+    }
+
+    .total-price__money {
+        font-size: 2.222vw;
+    }
+
+    .step-rent-car {
+        width: 59.166vw;
+        gap: 2.222vw;
+    }
+
+    .Billing-Info-form {
+        border-radius: 0.694vw;
+        padding: 1.666vw;
+        gap: 2.222vw;
+    }
+
+    .title {
+        gap: unset;
+    }
+
+    .title .title__target {
+        gap: 0.277vw;
+    }
+
+    .title__target__content1 {
+        font-size: 1.388vw;
+    }
+    .title__target__content2, .order-step {
+        font-size: 0.972vw;
+    }
+    
+    .order-step {
+        align-self: flex-end;
+    }
+
+    .Billing-Info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2.222vw;
+        justify-content: space-between;
+    }
+
+    .Billing-Info__item {
+        gap: 1.111vw;
+        width: 26.805vw;
+    }
+
+    .Billing-Info__item .title {
+        font-size: 1.111vw;
+    }
+
+    .Billing-Info__item .content {
+        font-size: 0.972vw;
+        padding: 1.527vw 2.222vw 1.527vw 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .Rental-Info-form {
+        padding: 1.666vw;
+        gap: 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .pick-up-info {
+        gap: 1.666vw;
+    }
+
+    .pick-up-info__title {
+        gap: 0.555vw;
+    }
+
+    .pick-up-info__field {
+        gap: 1.111vw;
+        width: 26.805vw;
+    }
+
+    .pick-up-info__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2.222vw;
+        justify-content: space-between;
+    }
+
+    .pick-up-info__label {
+        font-size: 1.111vw;
+    }
+
+    .pick-up-info__select {
+        font-size: 0.972vw;
+        border-radius: 0.694vw;
+        padding: 1.458vw 2.222vw 1.458vw 2.222vw;
+    }
+
+    .Payment-Method {
+        padding: 1.666vw;
+        gap: 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .credit-card {
+        padding: 1.666vw;
+        border-radius: 0.694vw;
+        gap: 2.222vw;
+    }
+
+    .credit-card-info {
+        gap: 1.666vw;
+    }
+
+    .credit-card__title {
+        gap: 0.555vw;
+    }
+
+    .title-circle {
+        padding: 0.277vw;
+        border: 0.277vw solid #bccbf4;
+    }
+
+    .title-content {
+        width: 8.333vw;
+        font-size: 1.111vw;
+    }
+
+    .credit-card__image {
+        gap: 0.833vw;
+    }
+
+    .visa {
+        width: 3.333vw;
+        height: auto;
+    }
+
+    .mc-icon {
+        width: 2.222vw;
+        height: auto;
+    }
+
+    .credit-card__form {
+        flex-direction: row;
+        gap: 2.222vw;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .credit-card__field {
+        gap: 1.111vw;
+        width: 25.138vw;
+    }
+
+    .label {
+        font-size: 1.111vw;
+    }
+
+    .credit-card__field .content {
+        font-size: 0.972vw;
+        padding: 1.527vw 2.222vw 1.527vw 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .credit-card--button {
+        padding: 1.111vw 2.222vw 1.111vw 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .credit-card--button .content {
+        gap: 1.388vw;
+    }
+
+    .choose-button {
+        width: 1.388vw;
+        height: 1.388vw;
+        border: 0.104vw solid #90A3BF;
+        box-sizing: unset;
+    }
+
+    .choose-button:checked {
+        background-color: #3563E9;
+        border: 0.104vw solid #3563E9;
+    }
+
+    .credit-card--button .content .name {
+        font-size: 1.111vw;
+    }
+
+    .logo-paypal {
+        width: 6.944vw;
+        height: 1.666vw;
+    }
+
+    .logo-bitcoin {
+        width: 6.527vw;
+        height: 1.388vw;
+    }
+
+    .Confirmation {
+        gap: 2.222vw;
+        padding: 1.666vw;
+        border-radius: 0.694vw;
+    }
+
+    .Confirmation-form {
+        gap: 2.222vw;
+    }
+
+    .Confirmation-form__agreement {
+        gap: 1.388vw;
+        padding: 1.111vw 2.222vw 1.111vw 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .Confirmation-form__agreement .agree-button {
+        width: 1.388vw;
+        height: 1.388vw;
+        border: 0.104vw solid #90A3BF;
+        border-radius: 0.277vw;
+    }
+    
+    .Confirmation-form__agreement .agree-button:checked:after {
+        width: 0.3vw;
+        height: 0.6vw;
+        top: 10%;
+        border-width: 0 0.15vw 0.15vw 0;
+    }
+
+    .Confirmation-form__agreement .content {
+        font-size: 1.111vw;
+    }
+
+    .rent-car-button {
+        width: 9.722vw;
+        height: 3.888vw;
+        border-radius: 0.694vw;
+        font-size: 1.111vw;
+        margin-bottom: unset;
+    }
+
+    .safe-data {
+        gap: 1.111vw;
+    }
+
+    .ic-security-safety {
+        width: 2.222vw;
+    }
+
+    .safe-data__content {
+        gap: 0.555vw;
+    }
+
+    .safe-data__content .title {
+        font-size: 1.111vw;
+    }
+
+    .safe-data__content .content {
+        font-size: 0.972vw;
+    }
 
     /* footer  */
     .footer {
@@ -736,9 +1104,11 @@
         justify-content: space-between  ;
     }
 
+
     .footer .title {
         width: 20.277vw;
         gap: 1.111vw;
+        height: fit-content;
     }
 
     .logo {
