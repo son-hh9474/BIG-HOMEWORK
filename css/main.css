@@ -304,6 +304,48 @@
 }
 
 
+.Rental-Info-form {
+    padding: 4.266vw;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4vw;
+    background-color: #FFFFFF;
+}
+
+.pick-up-info {
+    display: flex;
+    gap: 5.333vw;
+    flex-direction: column;
+}
+
+.pick-up-info__title {
+    display: flex;
+    gap: 2.133vw;
+}
+
+.pick-up-info__field {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;   
+}
+
+.pick-up-info__label {
+    font-size: 3.733vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.pick-up-info__select {
+    background-color: #F6F7F9;
+    border: none;
+    outline: none;
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #90A3BF;
+    border-radius: 2.666vw;
+    padding: 5.333vw 6.4vw 5.333vw 6.4vw;
+}
+
 
 
 .Payment-Method {
@@ -311,9 +353,138 @@
     flex-direction: column;
     padding: 4.266vw;
     background-color: #FFFFFF;
+    gap: 6.4vw;
 }
 
+.credit-card {
+    display: flex;
+    flex-direction: column;
+    padding: 4.266vw;
+    border-radius: 2.666vw;
+    background-color: #F6F7F9;
+    gap: 5.333vw;
+}
 
+.credit-card__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit-card__title {
+    display: flex;
+    gap: 2.133vw;
+}
+
+.title-circle {
+    width: 0;
+    height: 0;
+    padding: 1.066vw;
+    background-color: #3563E9;
+    border: 1.3vw solid #bccbf4;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.title-content {
+    width: 24vw;
+    font-weight: 600;
+    font-size: 4.266vw;
+    color: #1A202C;
+}
+
+.credit-card__image {
+    display: flex;
+    gap: 3.2vw;
+    align-items: center;
+}
+
+.visa {
+    max-width: 100%;
+    height: 4.266vw;
+    width: 12.8vw;
+    
+    
+}
+
+.mc-icon {
+    max-width: 100%;
+    height: 5.333vw;
+    width: 8.533vw;
+}
+
+.credit-card__form {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+}
+
+.credit-card__field {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+}
+
+.label {
+    font-size: 3.733vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.credit-card__field .content {
+    outline: none;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #90A3BF;
+    padding: 5.6vw 6.4vw 5.6vw 6.4vw;
+    border-radius: 2.666vw;
+}
+
+.credit-card--button {
+    display: flex;
+    justify-content: space-between;
+    padding: 4.266vw;
+}   
+
+.credit-card--button .content {
+    display: flex;
+    align-items: center;
+    gap: 2.133vw;
+}
+
+.choose-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 3.554vw;
+    height: 3.554vw;
+    border: 0.4vw solid #90A3BF;
+    border-radius: 50%;
+}
+
+.choose-button:checked {
+    background-color: #3563E9;
+    border: #3563E9;
+}
+
+.credit-card--button .content .name {
+    font-size: 3.733vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.logo-paypal {
+    width: 25.6vw;
+    max-width: 100%;
+    height: 5.333vw;
+}
+
+.logo-bitcoin {
+    width: 24.533vw;
+    max-width: 100%;
+    height: 5.333vw;
+}
 .Confirmation {
     display: flex;
     flex-direction: column;
@@ -429,21 +600,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
     width: 100vw;
     display: flex;
@@ -537,17 +693,9 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 1024px) {
+
+    /* header */
     .header {
         flex-direction: row;
         border: 1px solid #C3D4E966;
@@ -572,7 +720,8 @@
 
     }
 
-
+    /* main content */
+    
 
 
     /* footer  */
