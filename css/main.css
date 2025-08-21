@@ -305,6 +305,15 @@
 
 
 
+
+.Payment-Method {
+    display: flex;
+    flex-direction: column;
+    padding: 4.266vw;
+    background-color: #FFFFFF;
+}
+
+
 .Confirmation {
     display: flex;
     flex-direction: column;
@@ -368,7 +377,9 @@
 }
 
 .rent-car-button {
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     width: 26.666vw;
     height: 9.6vw;
@@ -379,8 +390,7 @@
     font-weight: 600;   
     text-decoration: none;
     background-color: #3563E9;
-    text-align: center;
-    align-content: center;
+    
     margin-bottom: 2.133vw;
 }
 
