@@ -3,15 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .container {
     max-width: 100%;
 }
 
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
 
 .header {
     width: 100vw;
@@ -60,11 +58,374 @@ body {
 .main-content {
     width: 100vw;
     background-color: #F6F7F9;
+    display: flex;
+    flex-direction: column;
+    padding: 8.533vw 6.4vw 6.4vw 6.4vw;
+    gap: 8.533vw;
 }
 
 .active {
     display: block;
 }
+
+.Rental-Summary {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4vw;
+    padding: 4.266vw;
+    border-radius: 2.666vw;
+}
+
+.Rental-Summary .title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.066vw;
+    width: 100%;
+} 
+
+.Rental-Summary .title__target {
+    font-weight: 700;
+    font-size: 4.266vw;
+    color: #1A202C;
+}
+
+.Rental-Summary .title__info {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.content-product {
+    display: flex;
+    gap: 4.266vw;
+}
+
+.content-product__image {
+    flex: none;
+    width: 30.933vw;
+    max-width: 100%;
+    height: auto;
+}
+
+.content-product__info {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+    justify-content: center;
+}
+
+.content-product__name {
+    font-weight: 700;
+    font-size: 5.333vw;
+    color: #1A202C;
+}
+
+.star {
+    width: 20.266vw;
+    max-width: 100%;
+    height: auto;
+}
+
+.number-review {
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #3D5278;
+}
+
+.price {
+    padding-top: 4.266vw;
+    border-top: 0.266vw solid #C3D4E966;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3.2vw;
+}
+
+.price__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtotal, .tax {
+    align-self: center;
+    font-weight: 600;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.money {
+    font-weight: 600;
+    font-size: 4.266vw;
+    color: #1A202C;
+}
+
+.Promo {
+    padding: 2.666vw 5.333vw 2.666vw 5.333vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F7F9;
+    border-radius: 2.666vw;
+}
+
+.Promo__code {
+    outline: none;
+    border: none;
+    background-color: #F6F7F9;
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.Promo__code::placeholder {
+    color: #90A3BF;
+}
+
+.Promo__submit {
+    border: none;
+    background-color: #F6F7F9;
+    color: #1A202C;
+    font-weight: 600;
+    font-size: 3.2vw;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.Promo__submit:hover {
+    opacity: 0.5;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-price__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.066vw;
+}
+
+.total-price__content__title {
+    font-weight: 700;
+    font-size: 4.266vw;
+    color: #1A202C;
+}
+
+.total-price__content__rental {
+    font-weight: 400;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.total-price__money {
+    font-weight: 700;
+    color: #1A202C;
+    font-size: 5.333vw;
+}
+
+.step-rent-car  {
+    display: flex;
+    flex-direction: column;
+    gap: 8.533vw;
+}
+
+.Billing-Info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4vw;
+    padding: 4.266vw;
+    background-color: #FFFFFF;
+    border-radius: 2.666vw;
+}
+
+.title {
+    display: flex;
+    gap: 8.8vw;
+    width: 100%;
+    justify-content: space-between ;
+}
+
+.title .title__target {
+    display: flex;
+    flex-direction: column;
+    gap: 1.866vw;
+    justify-content: space-between;
+}
+
+.title__target__content1 {
+    font-size: 4.266vw;
+    font-weight: 700;
+    color: #1A202C;
+}
+.title__target__content2, .order-step {
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #90A3BF;
+}
+
+.order-step {
+    flex: none;
+    width: 17.066vw;
+}
+
+.Billing-Info {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+}
+
+.Billing-Info__item {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+}
+
+.Billing-Info__item .title {
+    font-size: 3.733vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.Billing-Info__item .content {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+    border: none;
+    background-color: #F6F7F9;
+    padding: 5.6vw 6.4vw 5.6vw 6.4vw;
+    outline: none;
+    border-radius: 2.666vw;
+}
+
+.Billing-Info__item .content::placeholder {
+    color: #90A3BF;
+}
+
+
+
+.Confirmation {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4vw;
+    padding: 4.266vw;
+    border-radius: 2.666vw;
+    background-color: #FFFFFF;
+}
+
+.Confirmation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+}
+
+.Confirmation-form__agreement {
+    display: flex;
+    gap: 4.266vw;
+    padding: 2.666vw 4.266vw 2.666vw 4.266vw;
+    background-color: #F6F7F9;
+    border-radius: 2.666vw;
+}
+
+.Confirmation-form__agreement .agree-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #F6F7F9;
+    width: 4.266vw;
+    height: 4.266vw;
+    align-self: center;
+    border: 0.4vw solid #90A3BF;
+    border-radius: 1.066vw;
+    flex: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.Confirmation-form__agreement .agree-button:checked {
+    background-color: #3563E9;
+    border: #3563E9;
+}
+
+.Confirmation-form__agreement .agree-button:checked:after {
+    content: '';
+    position: absolute;
+    left: 30%;
+    top: 8%;
+    width: 1.066vw;
+    height: 2.133vw;
+    border: solid #FFFFFF;
+    border-width: 0 0.6vw 0.6vw 0;
+    transform: rotate(45deg);
+
+}
+
+.Confirmation-form__agreement .content {
+    color: #1F2544;
+    font-size: 3.2vw;
+    font-weight: 500;
+}
+
+.rent-car-button {
+    cursor: pointer;
+    border: none;
+    width: 26.666vw;
+    height: 9.6vw;
+    border-radius: 1.066vw;
+    transition: all 0.2s ease;
+    color: #FFFFFF;
+    font-size: 3.2vw;
+    font-weight: 600;   
+    text-decoration: none;
+    background-color: #3563E9;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 2.133vw;
+}
+
+.rent-car-button:hover {
+    opacity: 0.5;
+}
+
+.safe-data {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+}
+
+.ic-security-safety {
+    width: 8.533vw;
+    max-width: 100%;
+    height: auto;
+}
+
+.safe-data__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.066vw;
+}
+
+.safe-data__content .title {
+    color: #1A202C;
+    font-weight: 700;
+    font-size: 4.266vw;
+}
+
+.safe-data__content .content {
+    color: #90A3BF;
+    font-weight: 500;
+    font-size: 3.2vw;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -89,7 +450,7 @@ body {
 
 }
 
-.title {
+.footer .title {
     width: 57.6vw;
     display: flex;
     flex-direction: column;
@@ -216,7 +577,7 @@ body {
         justify-content: space-between  ;
     }
 
-    .title {
+    .footer .title {
         width: 20.277vw;
         gap: 1.111vw;
     }
