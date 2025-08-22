@@ -2,6 +2,7 @@
 # Car Rental Dashboard Website
 
 Dự án xây dựng **giao diện quản lý thuê xe ô tô** với các tính năng chính như hiển thị thông tin chi tiết thuê xe
+
 Website chạy theo thứ tự trang web từ trái qua phải trong file figma
 
 ---
