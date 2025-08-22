@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Car Rent</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./java_script/main.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            
+            <div class="button-and-image">
+
+                <!-- nút hamburger giao diện mobile -->
+                <button class="button">
+                    <img src="images/header_images/menu.png" alt="Button Hamburger" class="button--hamburger">
+                </button>
+
+                <a href="" class="image-profile">
+                    <img src="images/header_images/Like.png" alt="Image Profile" class="image-profile--mobile">
+                </a>
+
+                <a href="" class="image-profile">
+                    <img src="images/header_images/Notification.png" alt="Image Profile" class="image-profile--mobile">
+                </a>
+
+                <a href="" class="image-profile">
+                    <img src="images/header_images/Settings.png" alt="Image Profile" class="image-profile--mobile">
+                </a>
+
+
+                <a href="" class="image-profile active">
+                    <img src="images/header_images/Image.png" alt="Image Profile" class="image-profile--mobile">
+                </a>
+            
+            </div>
+            <!-- nút logo dẫn đến trang chủ -->
+            <a href="Detail_car_rent.html" class="logo">MORENT</a>
+            
+            
+            <div class="seach-mobile">
+                <!-- thanh tìm kiếm -->
+                <input type="text" class="seach__input" placeholder="Search something here">
+                <!-- nút filters -->
+                <div class="seach__filters">
+                    <img src="images/header_images/Filter_mobile.png" alt="Filters Icon" class="seach__filters--mobile">
+                </div>
+            </div>
+            <!-- thanh tìm kiếm dành cho màn hình desktop -->
+            <div class="seach-desktop">
+                <img src="images/header_images/search-normal.png" alt="Seach Icon" class="seach__icon">
+                <input type="text" placeholder="Search something here" class="seach__input">
+                <img src="images/header_images/Filter.png" alt="Filters Icon" class="seach__icon">
+            </div>
+        </header>
+
+        <!-- phần nội dung body -->
+        <main class="main-content">
+            <!-- side bar -->
+            <div class="side-bar">
+                <div class="side-bar__element--container">
+                    <p class="element__title">T Y P E</p>
+                    <div class="element--type1__container">
+                        <div class="item-container">
+                            <input type="checkbox" class="tick">
+                            <div class="element-content">
+                                Sport  <span class="number">(10)</span>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <input type="checkbox" class="tick">
+                            <div class="element-content">
+                               SUV  <span class="number">(12)</span>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <input type="checkbox" class="tick">
+                            <div class="element-content">
+                                MPV  <span class="number">(16)</span>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <input type="checkbox" class="tick">
+                            <div class="element-content">
+                                Sedan  <span class="number">(20)</span>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <input type="checkbox" class="tick">
+                            <div class="element-content">
+                                Coupe  <span class="number">(14)</span>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <input type="checkbox" class="tick">
+                            <div class="element-content">
+                                Hatchback  <span class="number">(14)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-bar__element--container">  
+                    <p class="element__title">C A P A C I T Y</p>
+                    <div class="element--type1__container">
+                        <div class="item-container">
+                            <input type="checkbox" class="tick">
+                            <div class="element-content">
+                                2 Person  <span class="number">(10)</span>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <input type="checkbox" class="tick">
+                            <div class="element-content">
+                                4 Person  <span class="number">(14)</span>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <input type="checkbox" class="tick">
+                            <div class="element-content">
+                                6 Person  <span class="number">(12)</span>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <input type="checkbox" class="tick">
+                            <div class="element-content">
+                                8 or More  <span class="number">(16)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-bar__element--container">
+                    <p class="element__title">P R I C E</p>
+                    <div class="element--type2__container">
+                        <input type="range" min="0" max="100" value="50" class="price-range">
+                        <p  class="number">Max. $100.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-container">
+                <!-- khối nội dung giới thiệu và mô tả về xe -->
+                <div class="detail-car">
+                    <!-- ảnh xe -->
+                    <div class="detail-car__images">
+                        <img class="images__main" src="images/main_content/detail_car/Ads.png" alt="main image">
+                        <div class="images__gallery">
+                            <img src="images/main_content/detail_car/Look 1.png" alt="look 1" class="images__gallery__item">
+                            <img src="images/main_content/detail_car/Look 3.png" alt="look 2" class="images__gallery__item">
+                            <img src="images/main_content/detail_car/Look 2.png" alt="look 3" class="images__gallery__item">
+                        </div>
+                    </div>
+                    <!-- mô tả và giới thiệu xe -->
+                    <div class="detail-car__decription">
+                        <!-- tên xe -->
+                        <div class="detail-car__info">
+                            <p class="car-name">Nissan GT - R</p>
+                            <div class="review-info">
+                                <img src="images/main_content/car_decription/star.png" alt="rate" class="star">
+                                <p class="number-reviewer">440+ Reviewer</p>
+                            </div>
+                        </div>
+                        <!-- giới thiệu về xe -->
+                        <p class="detail-car__introduction">NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".</p>
+                        <!-- thông số xe -->
+                        <div class="detail-car__car-data">
+                            <!-- container của hai dòng thông số -->
+                            <div class="car-data__container">
+                                <!-- container của một thông số -->
+                                <div class="car-data__container_item">
+                                    <!-- thông số -->
+                                    <div class="car-data__container__title">Type Car</div>
+                                    <div class="car-data__container__parameter">Sport</div>
+                                </div>
+                                <div class="car-data__container_item">
+                                    <div class="car-data__container__title">Steering</div>
+                                    <div class="car-data__container__parameter">Manual</div>
+                                </div>
+                            </div>
+                            <div class="car-data__container">
+                                <div class="car-data__container_item">
+                                    <div class="car-data__container__title">Capacity</div>
+                                    <div class="car-data__container__parameter">2 Person</div>
+                                </div>
+                                <div class="car-data__container_item">
+                                    <div class="car-data__container__title">Gasoline</div>
+                                    <div class="car-data__container__parameter">70 L</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- giá thành  xe -->
+                        <div class="detail-car__price">
+                            <div class="price__info">
+                                <div class="price-current">
+                                    $80.00/<div class="per">days</div>
+                                </div>
+                                <div class="price-old">$100.00</div>
+                            </div>
+                            <div class="rent-button">
+                                <a href="Payment_car_rent/Payment_car_rent.html" class="rent-link">Rent Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- nội dung review đánh giá xe -->
+                <div class="reviews">
+                    <div class="reviews__total">
+                        <p class="reviews__total--content">Reviews</p>
+                        <div class="reviews__total--container">
+                            <span class="reviews__total--number">13</span>
+                        </div>
+                    </div>
+                    <div class="reviews__review">
+                        <div class="reviewer">
+                            <div class="reviewer__container--image">
+                                <img src="images/main_content/review/Profil.png" alt="avatar" class="reviewer__image">
+                            </div>
+                            
+                            <div class="reviewer__container">
+                                <div class="profile">
+                                
+                                    <div class="profile__info">
+                                        <p class="name-reviewer">Alex Stanton</p>
+                                        <p class="job-reviewer">CEO at Bukalapak</p>
+                                    </div>
+
+                                    <div class="rate__info">
+                                        <p class="day">21 July 2022</p>
+                                        <div class="rate__container">
+                                            <img src="images/main_content/review/Review.png" alt="rate" class="star">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <p class="comment--mobile">
+                                    We are very happy with the service from the MORENT App. Morent has a low price ...
+                                </p>
+
+                                <p class="comment--desktop">
+                                    We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="reviewer">
+
+                            <div class="reviewer__container--image">
+                                <img src="images/main_content/review/profil2.png" alt="avatar" class="reviewer__image">
+                            </div>
+                            <div class="reviewer__container">
+                                <div class="profile">
+                                
+                                    <div class="profile__info">
+                                        <p class="name-reviewer">Skylar Dias</p>
+                                        <p class="job-reviewer">CEO at Amazon</p>
+                                    </div>
+
+                                    <div class="rate__info">
+                                        <p class="day">20July 2022</p>
+                                        <div class="rate__container">
+                                            <img src="images/main_content/review/Review.png" alt="rate" class="star">  
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <p class="comment--mobile">
+                                    We are greatly helped by the services of the MORENT Application. Morent has a low ...
+                                </p>
+
+                                <p class="comment--desktop">
+                                    We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__button-show-all">
+                        <button class="text-show-all">Show All</button>
+                        <div class="arrow-down-container">
+                            <img src="images/main_content/review/arrow-down.png" alt="arrow-down image" class="arrow-down">
+                        </div>
+                    </div>
+                </div>
+                <!-- danh sách các xe phổ biến gần đây -->
+                <div class="car-lists car-lists--recent">
+                    <div class="car-lists__title">
+                        <p class="car-lists__title__item1">Recent Car</p>
+                        <p class="car-lists__title__item2">View All</p>
+                    </div>
+                    <!-- danh sách -->
+                    <div class="car-list">
+                        <!-- thẻ xe -->
+                        <div class="car-lists__item">
+                            <div class="car-lists__item__container">
+                                <div class="car-lists__car-name">
+                                    <p class="name">Koenigsegg</p>
+                                    <p class="type">Sport</p>
+                                </div>
+                                <div class="like-container">
+                                    <img src="images/main_content/car-list/heart.png" alt="heart" class="like">
+                                </div>
+                            </div>
+                            <div class="product-image-container">
+                                <div class="product-container">
+                                    <img src="images/main_content/car-list/Car.png" alt="car image" class="product-image">
+                                </div>
+                                <div class="shadow-container">
+                                    <img src="images/main_content/car-list/shadow.png" alt="shadow image" class="shadow-image">
+                                </div>
+                            </div>
+                    
+                            <div class="car-lists__item__spesification">
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/gas-station.png" alt="gas station" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">90L</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/Car (6).png" alt="car" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">Manual</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/profile-2user.png" alt="People" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">2 People</p>
+                                </div>
+                            </div>
+
+                            <div class="car-lists__item__price">
+                                <div class="price-info">
+                                    <div class="car-lists--price-current">
+                                        $99.00/ <span class="per">day</span>
+                                    </div>
+                                    <div class="car-lists--price-old"></div>
+                                </div>
+                                <div class="car-lists__rent-car-button">
+                                    <a href="" class="rent-car-button">Rent Now</a>
+                                </div>
+                
+                            </div>
+                        </div>
+                        <div class="car-lists__item">
+                            <div class="car-lists__item__container">
+                                <div class="car-lists__car-name">
+                                    <p class="name">Nissan GT - R</p>
+                                    <p class="type">Sport</p>
+                                </div>
+                                <div class="like-container">
+                                    <img src="images/main_content/car-list/heart_empty.png" alt="heart" class="like">
+                                </div>
+                            </div>
+                            
+                            <div class="product-image-container">
+                                <div class="product-container">
+                                    <img src="images/main_content/car-list/Car (1).png" alt="car image" class="product-image">
+                                </div>
+                                <div class="shadow-container">
+                                    <img src="images/main_content/car-list/shadow.png" alt="shadow image" class="shadow-image">
+                                </div>
+                            </div>
+                            <div class="car-lists__item__spesification">
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/gas-station.png" alt="gas station" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">80L</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/Car (6).png" alt="car" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">Manual</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/profile-2user.png" alt="People" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">2 People</p>
+                                </div>
+                            </div>
+
+                            <div class="car-lists__item__price">
+                                <div class="price-info">
+                                    <div class="car-lists--price-current">
+                                        $80.00/ <span class="per">day</span>
+                                    </div>
+                                    <div class="car-lists--price-old active">$100.00</div>
+                                </div>
+                                <div class="car-lists__rent-car-button">
+                                    <a href="" class="rent-car-button">Rent Now</a>
+                                </div>
+                
+                            </div>
+                        </div>
+                        <div class="car-lists__item">
+                            <div class="car-lists__item__container">
+                                <div class="car-lists__car-name">
+                                    <p class="name">Rolls-Royce</p>
+                                    <p class="type">Sport</p>
+                                </div>
+                                <div class="like-container">
+                                    <img src="images/main_content/car-list/heart_empty.png" alt="heart" class="like">
+                                </div>
+                            </div>
+                            
+                            <div class="product-image-container">
+                                <div class="product-container">
+                                    <img src="images/main_content/car-list/Car (2).png" alt="car image" class="product-image">
+                                </div>
+                                <div class="shadow-container">
+                                    <img src="images/main_content/car-list/shadow.png" alt="shadow image" class="shadow-image">
+                                </div>
+                            </div>
+                            <div class="car-lists__item__spesification">
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/gas-station.png" alt="gas station" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">70L</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/Car (6).png" alt="car" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">Manual</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/profile-2user.png" alt="People" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">4 People</p>
+                                </div>
+                            </div>
+
+                            <div class="car-lists__item__price">
+                                <div class="price-info">
+                                    <div class="car-lists--price-current">
+                                        $96.00/ <span class="per">day</span>
+                                    </div>
+                                    <div class="car-lists--price-old"></div>
+                                </div>
+                                <div class="car-lists__rent-car-button">
+                                    <a href="" class="rent-car-button">Rent Now</a>
+                                </div>
+                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- danh sách xe gợi ý -->
+                <div class="car-lists car-lists--recomendation">
+                    <div class="car-lists__title">
+                        <p class="car-lists__title__item1">Recomendation Car</p>
+                        <p class="car-lists__title__item2">View All</p>
+                    </div>
+                    <div class="car-list">
+                        <div class="car-lists__item">
+                            <div class="car-lists__item__container">
+                                <div class="car-lists__car-name">
+                                    <p class="name">All New Rush</p>
+                                    <p class="type">SUV</p>
+                                </div>
+                                <div class="like-container">
+                                    <img src="images/main_content/car-list/heart_empty.png" alt="heart" class="like">
+                                </div>
+                            </div>
+                            
+                            <div class="product-image-container">
+                                <div class="product-container">
+                                    <img src="images/main_content/car-list/Car (3).png" alt="car image" class="product-image">
+                                </div>
+                                <div class="shadow-container">
+                                    <img src="images/main_content/car-list/shadow.png" alt="shadow image" class="shadow-image">
+                                </div>
+                            </div>
+                            <div class="car-lists__item__spesification">
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/gas-station.png" alt="gas station" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">70L</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/Car (6).png" alt="car" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">Manual</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/profile-2user.png" alt="People" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">6 People</p>
+                                </div>
+                            </div>
+
+                            <div class="car-lists__item__price">
+                                <div class="price-info">
+                                    <div class="car-lists--price-current">
+                                        $72.00/ <span class="per">day</span>
+                                    </div>
+                                    <div class="car-lists--price-old active">$80.00</div>
+                                </div>
+                                <div class="car-lists__rent-car-button">
+                                    <a href="" class="rent-car-button">Rent Now</a>
+                                </div>
+                
+                            </div>
+                        </div>
+                        <div class="car-lists__item">
+                            <div class="car-lists__item__container">
+                                <div class="car-lists__car-name">
+                                    <p class="name">CR - V</p>
+                                    <p class="type">SUV</p>
+                                </div>
+                                <div class="like-container">
+                                    <img src="images/main_content/car-list/heart.png" alt="heart" class="like">
+                                </div>
+                            </div>
+                            
+                            <div class="product-image-container">
+                                <div class="product-container">
+                                    <img src="images/main_content/car-list/Car (4).png" alt="car image" class="product-image">
+                                </div>
+                                <div class="shadow-container">
+                                    <img src="images/main_content/car-list/shadow.png" alt="shadow image" class="shadow-image">
+                                </div>
+                            </div>
+                            <div class="car-lists__item__spesification">
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/gas-station.png" alt="gas station" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">80L</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/Car (6).png" alt="car" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">Manual</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/profile-2user.png" alt="People" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">6 People</p>
+                                </div>
+                            </div>
+
+                            <div class="car-lists__item__price">
+                                <div class="price-info">
+                                    <div class="car-lists--price-current">
+                                        $80.00/ <span class="per">day</span>
+                                    </div>
+                                    <div class="car-lists--price-old"></div>
+                                </div>
+                                <div class="car-lists__rent-car-button">
+                                    <a href="" class="rent-car-button">Rent Now</a>
+                                </div>
+                
+                            </div>
+                        </div>
+                        <div class="car-lists__item">
+                            <div class="car-lists__item__container">
+                                <div class="car-lists__car-name">
+                                    <p class="name">All New Terios</p>
+                                    <p class="type">SUV</p>
+                                </div>
+                                <div class="like-container">
+                                    <img src="images/main_content/car-list/heart_empty.png" alt="heart" class="like">
+                                </div>
+                            </div>
+                            
+                            <div class="product-image-container">
+                                <div class="product-container">
+                                    <img src="images/main_content/car-list/Car (5).png" alt="car image" class="product-image">
+                                </div>
+                                <div class="shadow-container">
+                                    <img src="images/main_content/car-list/shadow.png" alt="shadow image" class="shadow-image">
+                                </div>
+                            </div>
+                            <div class="car-lists__item__spesification">
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/gas-station.png" alt="gas station" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">90L</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/Car (6).png" alt="car" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">Manual</p>
+                                </div>
+                                <div class="spesification__container">
+                                    <div class="icon-container">
+                                        <img src="images/main_content/car-list/profile-2user.png" alt="People" class="spesification__container__image">
+                                    </div>
+                                    <p class="spesification__container__parameter">6 People</p>
+                                </div>
+                            </div>
+
+                            <div class="car-lists__item__price">
+                                <div class="price-info">
+                                    <div class="car-lists--price-current">
+                                        $74.00/ <span class="per">day</span>
+                                    </div>
+                                    <div class="car-lists--price-old"></div>
+                                </div>
+                                <div class="car-lists__rent-car-button">
+                                    <a href="" class="rent-car-button">Rent Now</a>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </main>
+
+        <!-- phần footer của trang web -->
+        <footer class="footer">
+
+            <div class="contact-container">
+                <div class="title">
+                    <a href="Detail_car_rent.html" class="logo">MORENT</a>
+                    <p class="text">Our vision is to provide convenience and help increase your sales business.</p>
+                </div>
+
+            <div class="resources">
+                <div class="resources__about">
+                    
+                    <p class="resources__title">About</p>
+                    
+                    <p class="resources__item">
+                        How it works
+                    </p>
+                    <p class="resources__item">
+                        Featured
+                    </p>
+                    <p class="resources__item">
+                        Partnership
+                    </p>
+                    <p class="resources__item">
+                        Bussiness Relation
+                    </p>
+                </div>
+                <div class="resources__socials">
+                    <p class="resources__title">Socials</p>
+                    
+                    <p class="resources__item">
+                        Discord
+                    </p>
+                    <p class="resources__item">
+                        Instagram
+                    </p>
+                    <p class="resources__item">
+                        Twitter
+                    </p>
+                    <p class="resources__item">
+                        Facebook
+                    </p>
+                </div>
+                <div class="resources__community">
+                    <p class="resources__title">Community</p>
+                    
+                    <p class="resources__item">
+                        Events
+                    </p>
+                    <p class="resources__item">
+                        Blog
+                    </p>
+                    <p class="resources__item">
+                        Podcast
+                    </p>
+                    <p class="resources__item">
+                        Invite a friend
+                    </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="legal-link-container">
+                <div class="legal-link">
+                    <div class="legal-link__item">
+                        Privacy & Policy
+                    </div>
+                    <div class="legal-link__item">
+                        Terms & Condition
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    ©2022 MORENT. All rights reserved
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1243 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container {
+    width: 100vw;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.header {
+    width: 100vw;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 8.533vw 6.133vw 8.533vw 6.666vw;
+    gap: 6.4vw;
+}
+
+
+.button-and-image {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button {
+    width: 8.3vw;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.image-profile {
+    width: 7.466vw;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: none;
+}
+
+.button--hamburger {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: #FFFFFF;
+    
+}
+
+.image-profile--mobile {
+    max-width: 100%;
+    height: auto;
+} 
+
+.logo {
+    width: 28.8vw;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 6.4vw;
+    color: #3563E9;
+    transition: all 0.2s ease;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.seach-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;   
+    gap: 4.266vw;
+}
+
+.seach__input {
+    text-align: center;
+    max-width: 100%;
+    border-radius: 2.666vw;
+    border: 0.266vw solid #C3D4E966;
+    flex: 1 1 auto;
+    color: #90A3BF;
+    font-size: 3.733vw;
+    font-weight: 500;
+
+}
+
+.seach__filters {
+    width: 12.8vw;
+}
+
+.seach__filters--mobile {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.seach__filters--mobile:hover {
+    scale: 1.2;
+}
+
+.button:hover {
+    scale: 1.2;
+}
+
+.image-profile:hover {
+    scale: 1.2;
+}
+
+.seach-desktop  {
+    display: none;
+}
+
+
+.main-content {
+    width: 100vw;
+    display: flex;
+}
+
+.side-bar {
+    display: none;
+    border-right: 1px solid #C3D4E966;
+}
+
+.content-container {
+    background-color: #F6F7F9;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8.533vw;
+    padding-bottom: 6.4vw;
+}
+
+.detail-car {
+    display: flex;
+    flex-direction: column;
+    gap: 8.53vw;
+    padding-top: 8.533vw;
+    width: 87.2vw;
+}
+
+.detail-car__images {
+    width: 87.2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4vw;
+}
+
+.images__main {
+    max-width: 100%;
+    height: auto;
+}
+
+.images__gallery {
+    display: flex;
+    gap: 5.333vw;
+}
+
+.images__gallery__item {
+    width: 25.6vw;
+    flex-grow: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.images__gallery__item:hover {
+    scale: 1.2;
+}
+
+
+
+.detail-car__decription {
+    width: 87.2vw;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 2.666vw;
+    padding: 4.266vw;
+    gap: 4.266vw;
+}
+
+.detail-car__info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.car-name {
+    width: 46.4vw;
+    font-weight: bold;
+    font-size: 5.066vw;
+}
+
+.review-info {
+    display: flex;
+    gap: 2.133vw;
+    align-items: center;
+}
+
+.review-info .star {
+    flex: none;
+    width: 20.266vw;
+    max-width: 100%;
+    height: 3.2vw;
+}
+
+.number-reviewer {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.detail-car__introduction {
+    font-weight: 400;
+    font-size: 3.2vw;
+    line-height: 6.4vw;
+    color: #90A3BF;
+}
+
+.detail-car__car-data {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4.266vw;
+}
+
+.car-data__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.266vw;
+}
+
+.car-data__container_item {
+    width: 33.066vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-data__container__title {
+    width: 13.866vw;
+    font-weight: 500;
+    color: #90A3BF;
+    font-size: 3.2vw;
+}
+.car-data__container__parameter {
+    width: 13.866w;
+    font-weight: 600;
+    color: #1A202C;
+    font-size: 3.2vw;
+    text-align: right;
+}
+
+.detail-car__price {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price__info {
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-current {
+    display: flex;
+    align-items: end;
+    font-weight: bold;
+    font-size: 5.333vw;
+    color: #1A202C;
+}
+
+.price-old, .per {
+    font-size: 3.2vw;
+    color: #90A3BF;
+    font-weight: 700;
+}
+
+.price-old {
+    text-decoration: line-through;
+}
+
+.rent-button {
+    width: 37.333vw;
+    text-decoration: none;
+    text-align: justify;
+    border-radius: 1.066vw;
+    background-color: #3563E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.rent-button:hover {
+    opacity: 0.8;
+}
+.rent-link {
+    text-decoration: none;
+    text-align: justify;
+    color: #FFFFFF;
+    font-size: 4.266vw;
+    font-weight: bold;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 2.666vw;
+    width: 87.2vw;
+    padding: 4.266vw;
+    gap: 6.4vw;
+}
+
+.reviews__total {
+    display: flex;
+    gap: 3.2vw;
+    
+}
+
+.reviews__total--content {
+    color: #1A202C;
+    font-weight: 600;
+    font-size: 5.333vw;
+}
+
+.reviews__total--container {
+    display: flex;
+    color:#FFFFFF;
+    background: #3563E9;
+    border-radius: 1.066vw;
+    width: 11.733vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.reviews__total--number {
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 3.733vw;
+}
+
+
+.reviews__review {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+}
+
+.reviewer {
+    display: flex;
+    gap: 2.133vw;
+}
+
+.reviewer__container--image {
+    width: 11.733vw;  
+    flex: none;
+}
+
+.reviewer__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.reviewer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.266vw;
+    flex-grow: 1;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile__info, .rate__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.133vw;
+}
+
+.name-reviewer {
+    font-size: 4.266vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.job-reviewer, .day {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.rate__info {
+    text-align: right;
+}
+
+.rate__container {
+    width: 20.266vw;
+}
+
+.star {
+    max-width: 100%;
+    height: auto;
+}
+
+.comment--desktop {
+    display: none;
+    color: #90A3BF;
+    font-weight: 400;
+}
+
+.comment--mobile {
+    color: #90A3BF;
+    font-size: 3.2vw;
+    font-weight: 400;
+}
+
+.reviews__button-show-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.reviews__button-show-all:hover {
+    opacity: 0.8;
+    scale: 1.2;
+}
+
+
+.text-show-all {
+    width: 18.133vw;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 3.733vw;
+    font-weight: 500;
+    color: #90A3BF;
+}
+
+.arrow-down-container {
+    width: 3.733vw;
+}
+
+.arrow-down {
+    max-width: 100%;
+    height: auto;
+}
+
+.car-lists {
+    width: 87.2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+} 
+
+.car-lists__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-lists__title__item1 {
+    font-size: 3.733vw;
+    font-weight: 600;
+    color: #90A3BF;
+}
+.car-lists__title__item2 {
+    font-size: 3.2vw;
+    font-weight: 600;
+    color: #3563E9;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.car-lists__title__item2:hover {
+    opacity: 0.5;
+}
+
+.car-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    gap: 5.333vw;
+}
+
+.car-lists__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8.533vw;
+    flex: none;
+    width: 64vw;
+    padding: 4.266vw;
+    background-color: #FFFFFF;
+    border-radius: 2.666vw;
+    scroll-snap-align: center;
+}
+
+.car-lists__item__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like-container {
+    width: 6.4vw;
+    flex: none;
+}
+
+.like {
+    max-width: 100%;
+    height: auto;
+}
+
+.car-lists__car-name {
+    display: flex;
+    flex-direction: column;
+    gap: 1.066vw;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 4.266vw;
+    color: #1A202C;
+}
+
+.type {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.product-image-container {
+    width: 55.466vw;
+    position: relative;
+    justify-content: center;
+}
+
+.product-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+.shadow-container {
+    width: 100%;
+    position: absolute;
+    bottom: -4vw;
+}
+
+.shadow-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.car-lists__item__spesification {
+    display: flex;
+    gap: 4.266vw;
+    align-self: center;
+}
+
+.spesification__container {
+    display: flex;
+    gap: 1.066vw;
+}
+
+.icon-container {
+    width: 3.733vw;
+}
+
+.spesification__container__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.spesification__container__parameter {
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #90A3BF;
+}
+
+.car-lists__item__price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-info {
+    width: 25.6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.066vw;
+    flex: none;
+}
+
+.car-lists--price-current {
+    font-size: 4.266vw;
+    font-weight: bold;
+    color: #1A202C;
+    flex: none;
+}
+
+.car-lists--price-current .per {
+    font-size: 3.2vw;
+    font-weight: bold;
+    color: #90A3BF ;
+}
+
+.car-lists--price-old {
+    display: none;
+    font-size: 3.2vw;
+    font-weight: bold;
+    color: #90A3BF ;
+    text-decoration: line-through;
+}
+
+.active {
+    display: block;
+}
+
+.car-lists__rent-car-button {
+    width: 26.666vw;
+    height: 9.6vw;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #3563E9;
+    border-radius: 1.066vw;
+    align-self: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.car-lists__rent-car-button:hover {
+    opacity: 0.8;
+}
+
+.rent-car-button {
+    text-decoration: none;
+    font-size: 3.2vw;
+    font-weight: bold;
+    color: #FFFFFF ;
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    background-color: #F6F7F9;
+    flex-direction: column;
+    gap: 12.8vw;
+    padding: 6.4vw;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12.8vw;
+
+}
+
+.title {
+    width: 57.6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4.266vw;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.resources {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.resources__about, .resources__community, .resources__socials {
+    margin-bottom: 12.4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4.266vw;
+}
+
+.resources__about {
+    width: 37.866vw;
+
+}
+
+
+.resources__socials {
+    width: 32vw;
+}
+
+.resources__community {
+    width: 32vw;
+    margin: 0;
+}
+
+.resources__title {
+    font-size: 5.333vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.resources__item {
+    color: #90A3BF;
+    font-size: 4.266vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.resources__item:hover {
+    opacity: 0.5;
+}
+
+.legal-link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8.533vw;
+}
+
+.legal-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal-link__item, .copyright {
+    font-size: 3.2vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+
+@media (min-width: 1024px) {
+
+    .header {
+        flex-direction: row;
+        border: 1px solid #C3D4E966;
+        padding: 2.777vw 2.222vw 2.777vw 4.166vw;
+        justify-content: space-between;
+        
+    }
+
+
+    .button-and-image {
+        width: 16.388vw;
+        gap: 1.388vw;
+        order: 3;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .image-profile {
+        width: 11.733vw;
+        display: block;
+    }
+
+    .header .logo {
+        width: 10.277vw;
+        font-size: 2.222vw;
+    }
+
+    .seach-mobile {
+        display: none;
+    }
+
+    .seach-desktop {
+        flex: none;
+        width: 34.166vw;
+        display: flex;
+        align-items: center;
+        border: 1px solid #C3D4E966;
+        border-radius: 4.861vw;
+        order: 2;
+        padding: 0.694vw;
+        gap: 1.388vw;
+    }
+
+    .seach__icon {
+        width: 1.666vw;
+        max-width: 100%;
+        height: auto;
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+
+    .seach__icon:hover {
+        opacity: 0.5;
+    }
+
+    .seach__input {
+        border: none;
+        font-size: 0.972vw;
+        text-align: left;
+        outline: none;
+    }
+
+
+
+    .side-bar  {
+        width: 25vw ;
+        display: flex;
+        flex: none;
+        flex-direction: column;
+        gap: 3.888vw;
+        padding: 2.222vw;
+    }
+
+    .side-bar__element--container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.944vw;
+    }
+
+    .element__title {
+        font-size: 0.833vw;
+        font-weight: 600;
+        color: #90A3BF;
+    }
+
+    .element--type1__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.222vw;
+    }
+
+    .item-container {
+        display: flex;
+        gap: 0.555vw;
+        align-items: center;
+    }
+
+
+    .tick {
+        -webkit-appearance: none;
+        -moz-appearance: none;    
+        appearance: none;        
+        width: 1.388vw;
+        height: 1.388vw;
+        border: 1px solid #90A3BF;
+        border-radius: 0.347vw;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .tick:checked {
+        background-color: #3563E9;
+    }
+
+    .tick:checked::after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    width: 0.347vw;
+    height: 0.694vw;
+    border: solid white;
+    border-width: 0 0.208vw 0.208vw 0;
+    transform: rotate(45deg);
+    }
+
+    .element-content {
+        font-weight: 600;
+        font-size: 1.388vw;
+        color: #1A202C;
+    }
+
+    .number {
+        font-weight: 600;
+        color: #90A3BF;
+        font-size: 1.388vw;
+    }
+
+    .element--type2__container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.833vw;
+    }
+
+
+    .content-container {
+        padding: 2.222vw;
+        gap: 2.222vw;
+        align-items: unset;
+        width: 75vw;
+    }
+
+    .detail-car {
+        width: 70.55vw;
+        flex-direction: row;
+        padding: 0;
+        gap: 2.222vw;
+        
+    }
+
+    .detail-car__images {
+        width: 34.166vw;
+        gap: 1.666vw;
+    }
+
+    .detail-car__decription {
+        width: 34.166vw;
+        border-radius: 0.694vw;
+        gap: 1.666vw;
+        padding: 1.666vw;
+    }
+
+    .images__gallery {
+        gap: 1.666vw;
+    }
+
+    .images__gallery__item {
+        width: 10.277vw;
+    }
+
+    .car-name {
+        width: 15.277vw;
+        font-size: 2.222vw;  
+    }
+
+    .review-info {
+        width: 20vw;
+        gap: 0.555vw;
+    }
+
+    .review-info .star {
+        width: 7.5vw;
+        height: unset;
+    }
+
+    .number-reviewer {
+        font-size: 0.972vw;
+    }
+    
+    .detail-car__introduction {
+        font-size: 1.388vw;
+        line-height: 2.111vw;
+    }
+
+    .detail-car__car-data {
+
+        padding-bottom: 2.5vw;
+    }
+
+    .car-data__container {
+        gap: 1.111vw;
+    }
+
+    .car-data__container_item {
+        width: 13.888vw;
+    }
+
+    .car-data__container__title {
+        width: 6.388vw;
+        font-size: 1.388vw;
+    }
+
+    .car-data__container__parameter {
+        width: 6.388vw;
+        font-size: 1.388vw;
+    }
+
+    .price__info {
+        width: 13.888vw;
+    }
+
+    .price-current {
+        font-size: 1.944vw;
+    }
+
+    .price-old, .per {
+        font-size: 1.111vw;
+    }
+
+    .rent-button {
+        width: 9.722vw;
+        border-radius: 0.277vw;
+    }
+
+    .rent-link {
+        font-size: 1.111vw;
+    }
+
+    .reviews {
+        border-radius: 0.694vw;
+        width: 70.555vw;
+        padding: 1.666vw;
+        gap: 2.222vw;
+    }
+
+    .reviews__total {
+        gap: 0.833vw;
+    }
+
+    .reviews__total--content {
+        font-size: 1.388vw;
+    }
+
+    .reviews__total--container {
+        width: 3.055vw;
+        border-radius: 0.277vw;
+    }
+
+    .reviews__total--number {
+        font-size: 0.972vw;
+    }
+
+    .reviews__review {
+        gap: 1.666vw;
+    }
+
+    .reviewer {
+        gap: 1.111vw;
+    }
+
+    .reviewer__container--image {
+        width: 3.888vw;
+    }
+
+    .reviewer__container {
+        gap: 0.833vw;
+    }
+
+    .profile__info, .rate__info {
+        gap: 0.555vw;
+    }
+
+    .name-reviewer {
+        font-size: 1.388vw;
+    }
+
+    .job-reviewer, .day {
+        font-size: 0.972vw;
+    }
+
+    .rate__container {
+        width: 7.5vw;
+    }
+
+    .comment--mobile {
+        display: none;
+    }
+
+    .comment--desktop {
+        display: block;
+        color: #1A202C;
+        font-size: 0.972vw;
+    }
+
+    .reviews__button-show-all {
+        gap: 0.555vw;
+    }
+
+    .text-show-all {
+        width: 9.166vw;
+        font-size: 1.111vw;
+    }
+
+    .arrow-down-container {
+        width: 1.111vw;
+    }
+
+    .car-list {
+        gap: 2.222vw;
+        scroll-snap-type: unset;
+        overflow-x: unset;
+        flex-wrap: wrap;
+    }
+
+    .car-lists__item{
+        width: 22.013vw;
+        padding: 1.666vw;
+        border-radius: 0.694vw;
+        scroll-snap-align: unset;
+    }
+
+    .car-lists__title__item1, .car-lists__title__item2 {
+        width: 12vw;
+        height: 3.055vw;
+        font-size: 1.111vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+
+    .car-lists {
+        width: 70.555vw;
+        gap: 2.222vw;
+    }
+
+    .car-lists__item {
+        padding: 1.666vw;
+        gap: 2.5vw;
+    }
+
+    .like-container{
+        width: 1.666vw;
+    }
+
+    .car-lists__car-name {
+        gap: 0.277vw;
+    }
+
+    .name {
+        font-size: 1.388vw;
+    }
+    
+    .type {
+        font-size: 0.972vw;
+    }
+
+    .product-image-container {
+        width: 18.888vw;
+    }
+
+    .product-container {
+        width: 18.68vw;
+    }
+
+    .shadow-container {
+        bottom: -1.041vw;
+    }
+
+    .car-lists__item__spesification {
+        gap: 1.180vw;
+    }
+
+    .spesification__container {
+        gap: 0.555vw;
+    }
+
+    .icon-container {
+        width: 1.666vw;
+    }
+
+    .spesification__container__parameter {
+        font-size: 0.972vw;
+    }
+
+    .price-info {
+        width: 8.888vw;
+        gap: 0.277vw;
+    }
+    
+    .car-lists--price-current {
+        font-size: 1.388vw;
+    }
+
+    .car-lists--price-current .per, .car-lists--price-old {
+        font-size: 0.972vw;
+    }
+
+    .car-lists__rent-car-button {
+        width: 8.055vw;
+        height: 3.055vw;
+        border-radius: 0.277vw;
+    }
+
+    .rent-car-button {
+        font-size: 1.111vw;
+    }
+
+    .footer {
+        background-color: #FFFFFF;
+        padding: 5.555vw 4.166vw 4.166vw 4.166vw;
+        gap: 2.5vw;
+    }
+
+    .contact-container {
+        flex-direction: row;
+        justify-content: space-between  ;
+    }
+
+    .title {
+        width: 20.277vw;
+        gap: 1.111vw;
+    }
+
+    .logo {
+        font-size: 2.222vw;
+    }
+
+    .text {
+        font-size: 1.111vw;
+    }
+
+    .resources {
+        gap: 4.166vw;
+    }
+
+    .resources__about, .resources__community, .resources__socials {
+        gap: 1.666vw;
+        margin: 0;
+    }
+
+    .resources__about, .resources__community, .resources__socials{
+        width: 10.555vw;
+    }
+
+    .resources__title {
+        font-size: 1.388vw;
+    }
+
+    .resources__item {
+        font-size: 1.111vw;
+    }
+
+    .legal-link-container {
+        border-top: 1px solid #13131329;
+        padding-top: 2.5vw;
+        flex-direction: row-reverse;
+        gap: unset;
+        justify-content: space-between;
+    }
+    
+    .legal-link__item, .copyright { 
+        font-size: 1.111vw;
+    }
+
+}

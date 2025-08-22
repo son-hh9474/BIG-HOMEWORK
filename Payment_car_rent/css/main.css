@@ -1,0 +1,1154 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+}
+
+
+.header {
+    width: 100vw;
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 8.533vw 6.133vw 8.533vw 6.666vw;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 28.8vw;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    font-size: 6.4vw;
+    color: #3563E9;
+    transition: all 0.2s ease;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.button-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-profile {
+    width: 7.466vw;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: none;
+}
+
+.image-profile:hover {
+    scale: 1.2;
+}
+
+.image-profile--mobile {
+    max-width: 100%;
+    height: auto;
+} 
+
+.main-content {
+    width: 100vw;
+    background-color: #F6F7F9;
+    display: flex;
+    flex-direction: column;
+    padding: 8.533vw 6.4vw 6.4vw 6.4vw;
+    gap: 8.533vw;
+}
+
+.active {
+    display: block;
+}
+
+.Rental-Summary {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4vw;
+    padding: 4.266vw;
+    border-radius: 2.666vw;
+}
+
+.Rental-Summary .title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.066vw;
+    width: 100%;
+} 
+
+.Rental-Summary .title__target {
+    font-weight: 700;
+    font-size: 4.266vw;
+    color: #1A202C;
+}
+
+.Rental-Summary .title__info {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.content-product {
+    display: flex;
+    gap: 4.266vw;
+}
+
+.content-product__image {
+    flex: none;
+    width: 30.933vw;
+    max-width: 100%;
+    height: auto;
+}
+
+.content-product__info {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+    justify-content: center;
+}
+
+.content-product__name {
+    font-weight: 700;
+    font-size: 5.333vw;
+    color: #1A202C;
+}
+
+.content-product__rate {
+    display: flex;
+    flex-direction: column;
+    gap: 1.066vw;
+}
+
+.star {
+    width: 20.266vw;
+    max-width: 100%;
+    height: auto;
+}
+
+.number-review {
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #3D5278;
+}
+
+.price {
+    padding-top: 4.266vw;
+    border-top: 0.266vw solid #C3D4E966;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3.2vw;
+}
+
+.price__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtotal, .tax {
+    align-self: center;
+    font-weight: 600;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.money {
+    font-weight: 600;
+    font-size: 4.266vw;
+    color: #1A202C;
+}
+
+.Promo {
+    padding: 2.666vw 5.333vw 2.666vw 5.333vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F7F9;
+    border-radius: 2.666vw;
+}
+
+.Promo__code {
+    outline: none;
+    border: none;
+    background-color: #F6F7F9;
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.Promo__code::placeholder {
+    color: #90A3BF;
+}
+
+.Promo__submit {
+    border: none;
+    background-color: #F6F7F9;
+    color: #1A202C;
+    font-weight: 600;
+    font-size: 3.2vw;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.Promo__submit:hover {
+    opacity: 0.5;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-price__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.066vw;
+}
+
+.total-price__content__title {
+    font-weight: 700;
+    font-size: 4.266vw;
+    color: #1A202C;
+}
+
+.total-price__content__rental {
+    font-weight: 400;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.total-price__money {
+    font-weight: 700;
+    color: #1A202C;
+    font-size: 5.333vw;
+}
+
+.step-rent-car  {
+    display: flex;
+    flex-direction: column;
+    gap: 8.533vw;
+}
+
+.Billing-Info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4vw;
+    padding: 4.266vw;
+    background-color: #FFFFFF;
+    border-radius: 2.666vw;
+}
+
+.title {
+    display: flex;
+    gap: 8.8vw;
+    width: 100%;
+    justify-content: space-between ;
+}
+
+.title .title__target {
+    display: flex;
+    flex-direction: column;
+    gap: 1.866vw;
+    justify-content: space-between;
+}
+
+.title__target__content1 {
+    font-size: 4.266vw;
+    font-weight: 700;
+    color: #1A202C;
+}
+.title__target__content2, .order-step {
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #90A3BF;
+}
+
+.order-step {
+    flex: none;
+}
+
+.Billing-Info {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+}
+
+.Billing-Info__item {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+}
+
+.Billing-Info__item .title {
+    font-size: 3.733vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.Billing-Info__item .content {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+    border: none;
+    background-color: #F6F7F9;
+    padding: 5.6vw 6.4vw 5.6vw 6.4vw;
+    outline: none;
+    border-radius: 2.666vw;
+}
+
+.Billing-Info__item .content::placeholder {
+    color: #90A3BF;
+}
+
+
+.Rental-Info-form {
+    padding: 4.266vw;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4vw;
+    background-color: #FFFFFF;
+    border-radius: 2.666vw;
+}
+
+.pick-up-info {
+    display: flex;
+    gap: 5.333vw;
+    flex-direction: column;
+}
+
+.pick-up-info__title {
+    display: flex;
+    gap: 2.133vw;
+}
+
+.pick-up-info__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+}
+
+.pick-up-info__field {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;   
+}
+
+.pick-up-info__label {
+    font-size: 3.733vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.pick-up-info__select {
+    background-color: #F6F7F9;
+    border: none;
+    outline: none;
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #90A3BF;
+    border-radius: 2.666vw;
+    padding: 5.333vw 6.4vw 5.333vw 6.4vw;
+}
+
+
+
+.Payment-Method {
+    display: flex;
+    flex-direction: column;
+    padding: 4.266vw;
+    background-color: #FFFFFF;
+    gap: 6.4vw;
+    border-radius: 2.666vw;
+}
+
+.credit-card {
+    display: flex;
+    flex-direction: column;
+    padding: 4.266vw;
+    border-radius: 2.666vw;
+    background-color: #F6F7F9;
+    gap: 5.333vw;
+}
+
+.credit-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+}
+
+.credit-card__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit-card__title {
+    display: flex;
+    gap: 2.133vw;
+}
+
+.title-circle {
+    width: 0;
+    height: 0;
+    padding: 1.066vw;
+    background-color: #3563E9;
+    border: 1.3vw solid #bccbf4;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.drop-off {
+    background-color: #54A6FF;
+    border-color: #cee7fe;
+}
+
+.title-content {
+    font-weight: 600;
+    font-size: 4.266vw;
+    color: #1A202C;
+}
+
+.credit-card__image {
+    display: flex;
+    gap: 3.2vw;
+    align-items: center;
+}
+
+.visa {
+    max-width: 100%;
+    height: 4.266vw;
+    width: 12.8vw;
+}
+
+.mc-icon {
+    max-width: 100%;
+    height: 5.333vw;
+    width: 8.533vw;
+}
+
+.credit-card__form {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+}
+
+.credit-card__field {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+}
+
+.label {
+    font-size: 3.733vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.credit-card__field .content {
+    outline: none;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #90A3BF;
+    padding: 5.6vw 6.4vw 5.6vw 6.4vw;
+    border-radius: 2.666vw;
+}
+
+.credit-card--button {
+    display: flex;
+    justify-content: space-between;
+    padding: 4.266vw;
+    background-color: #F6F7F9;
+    border-radius: 2.666vw;
+}   
+
+.credit-card--button .content {
+    display: flex;
+    align-items: center;
+    gap: 2.133vw;
+}
+
+.choose-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 3.554vw;
+    height: 3.554vw;
+    border: 0.4vw solid #90A3BF;
+    border-radius: 50%;
+}
+
+.choose-button:checked {
+    background-color: #3563E9;
+    border: 0.4vw solid #3563E9;
+}
+
+.credit-card--button .content .name {
+    font-size: 3.733vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.logo-paypal {
+    width: 25.6vw;
+    max-width: 100%;
+    height: 5.333vw;
+}
+
+.logo-bitcoin {
+    width: 24.533vw;
+    max-width: 100%;
+    height: 5.333vw;
+}
+.Confirmation {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4vw;
+    padding: 4.266vw;
+    border-radius: 2.666vw;
+    background-color: #FFFFFF;
+}
+
+.Confirmation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333vw;
+}
+
+.Confirmation-form__agreement {
+    display: flex;
+    gap: 4.266vw;
+    padding: 2.666vw 4.266vw 2.666vw 4.266vw;
+    background-color: #F6F7F9;
+    border-radius: 2.666vw;
+}
+
+.Confirmation-form__agreement .agree-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #F6F7F9;
+    width: 4.266vw;
+    height: 4.266vw;
+    align-self: center;
+    border: 0.4vw solid #90A3BF;
+    border-radius: 1.066vw;
+    flex: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.Confirmation-form__agreement .agree-button:checked {
+    background-color: #3563E9;
+    border-color: #3563E9;
+}
+
+.Confirmation-form__agreement .agree-button:checked:after {
+    content: '';
+    position: absolute;
+    left: 30%;
+    top: 8%;
+    width: 1.066vw;
+    height: 2.133vw;
+    border: solid #FFFFFF;
+    border-width: 0 0.6vw 0.6vw 0;
+    transform: rotate(45deg);
+
+}
+
+.Confirmation-form__agreement .content {
+    color: #1F2544;
+    font-size: 3.2vw;
+    font-weight: 500;
+}
+
+.rent-car-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 26.666vw;
+    height: 9.6vw;
+    border-radius: 1.066vw;
+    transition: all 0.2s ease;
+    color: #FFFFFF;
+    font-size: 3.2vw;
+    font-weight: 600;   
+    text-decoration: none;
+    background-color: #3563E9;
+    margin-bottom: 2.133vw;
+}
+
+.rent-car-button:hover {
+    opacity: 0.5;
+}
+
+.safe-data {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2vw;
+}
+
+.ic-security-safety {
+    width: 8.533vw;
+    max-width: 100%;
+    height: auto;
+}
+
+.safe-data__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.066vw;
+}
+
+.safe-data__content .title {
+    color: #1A202C;
+    font-weight: 700;
+    font-size: 4.266vw;
+}
+
+.safe-data__content .content {
+    color: #90A3BF;
+    font-weight: 500;
+    font-size: 3.2vw;
+}
+
+
+.footer {
+    width: 100vw;
+    display: flex;
+    background-color: #F6F7F9;
+    flex-direction: column;
+    gap: 12.8vw;
+    padding: 6.4vw;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12.8vw;
+
+}
+
+.footer .title {
+    width: 57.6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4.266vw;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #90A3BF;
+}
+
+.resources {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.resources__about, .resources__community, .resources__socials {
+    margin-bottom: 12.4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4.266vw;
+}
+
+.resources__about {
+    width: 37.866vw;
+
+}
+
+
+.resources__socials {
+    width: 32vw;
+}
+
+.resources__community {
+    width: 32vw;
+    margin: 0;
+}
+
+.resources__title {
+    font-size: 5.333vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.resources__item {
+    color: #90A3BF;
+    font-size: 4.266vw;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.resources__item:hover {
+    opacity: 0.5;
+}
+
+.legal-link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8.533vw;
+}
+
+.legal-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal-link__item, .copyright {
+    font-size: 3.2vw;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    /* header */
+    .header {
+        flex-direction: row;
+        border: 1px solid #C3D4E966;
+        padding: 2.777vw 2.222vw 2.777vw 4.166vw;
+        justify-content: space-between;
+        
+    }
+
+    .button-and-image {
+        width: 16.388vw;
+        gap: 1.388vw;
+    }
+
+    .image-profile {
+        width: 11.733vw;
+        display: block;
+    }
+
+    .header .logo {
+        width: 10.277vw;
+        font-size: 2.222vw;
+
+    }
+
+    /* main content */
+
+    .main-content {
+        flex-direction: row-reverse;
+        padding: 2.222vw;
+        gap: 2.222vw;
+    }
+
+    .Rental-Summary {
+        padding: 1.666vw;
+        gap: 2.222vw;
+        border-radius: 0.694vw;
+        width: 34.166vw;
+        height: fit-content;
+    }
+
+    .Rental-Summary .title {
+        gap: 0.277vw;
+    }
+
+    .Rental-Summary .title__target {
+        font-size: 1.388vw;
+    }
+
+    .Rental-Summary .title__info {
+        font-size: 0.972vw;
+    }
+
+    .content-product {
+        gap: 1.111vw;
+    }
+
+    .content-product__image {
+        width: 9.166vw;
+    }
+
+    .content-product__info {
+        gap: 0.555vw;
+    }
+
+    .content-product__name {
+        font-size: 2.222vw;
+    }
+
+    .content-product__rate {
+        flex-direction: row;
+    }
+
+    .star {
+        width: 7.5vw;
+    }
+
+    .number-review {
+        font-size: 0.972vw;
+    }
+
+    .price {
+        padding-top: 2.222vw;
+        border-top: 1px solid #C3D4E966;
+    }
+
+    .subtotal, .tax {
+        font-size: 1.111vw;
+    }
+
+    .money {
+        font-size: 1.111vw;
+    }
+
+
+    .Promo {
+        padding: 1.458vw 2.222vw 1.458vw 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .Promo__code {
+        font-size: 0.972vw;
+    }
+
+    .Promo__submit {
+        font-size: 1.111vw;
+    }
+
+    .total-price__content {
+        gap: 0.277vw;
+    }
+
+    .total-price__content__title {
+        font-size: 1.388vw;
+    }
+
+    .total-price__content__rental {
+        font-size: 0.972vw;
+    }
+
+    .total-price__money {
+        font-size: 2.222vw;
+    }
+
+    .step-rent-car {
+        width: 59.166vw;
+        gap: 2.222vw;
+    }
+
+    .Billing-Info-form {
+        border-radius: 0.694vw;
+        padding: 1.666vw;
+        gap: 2.222vw;
+    }
+
+    .title {
+        gap: unset;
+    }
+
+    .title .title__target {
+        gap: 0.277vw;
+    }
+
+    .title__target__content1 {
+        font-size: 1.388vw;
+    }
+    .title__target__content2, .order-step {
+        font-size: 0.972vw;
+    }
+    
+    .order-step {
+        align-self: flex-end;
+    }
+
+    .Billing-Info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2.222vw;
+        justify-content: space-between;
+    }
+
+    .Billing-Info__item {
+        gap: 1.111vw;
+        width: 26.805vw;
+    }
+
+    .Billing-Info__item .title {
+        font-size: 1.111vw;
+    }
+
+    .Billing-Info__item .content {
+        font-size: 0.972vw;
+        padding: 1.527vw 2.222vw 1.527vw 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .Rental-Info-form {
+        padding: 1.666vw;
+        gap: 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .pick-up-info {
+        gap: 1.666vw;
+    }
+
+    .pick-up-info__title {
+        gap: 0.555vw;
+    }
+
+    .pick-up-info__field {
+        gap: 1.111vw;
+        width: 26.805vw;
+    }
+
+    .pick-up-info__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2.222vw;
+        justify-content: space-between;
+    }
+
+    .pick-up-info__label {
+        font-size: 1.111vw;
+    }
+
+    .pick-up-info__select {
+        font-size: 0.972vw;
+        border-radius: 0.694vw;
+        padding: 1.458vw 2.222vw 1.458vw 2.222vw;
+    }
+
+    .Payment-Method {
+        padding: 1.666vw;
+        gap: 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .credit-card {
+        padding: 1.666vw;
+        border-radius: 0.694vw;
+        gap: 2.222vw;
+    }
+
+    .credit-card-info {
+        gap: 1.666vw;
+    }
+
+    .credit-card__title {
+        gap: 0.555vw;
+    }
+
+    .title-circle {
+        padding: 0.277vw;
+        border: 0.277vw solid #bccbf4;
+    }
+
+    .title-content {
+        width: 8.333vw;
+        font-size: 1.111vw;
+    }
+
+    .credit-card__image {
+        gap: 0.833vw;
+    }
+
+    .visa {
+        width: 3.333vw;
+        height: auto;
+    }
+
+    .mc-icon {
+        width: 2.222vw;
+        height: auto;
+    }
+
+    .credit-card__form {
+        flex-direction: row;
+        gap: 2.222vw;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .credit-card__field {
+        gap: 1.111vw;
+        width: 25.138vw;
+    }
+
+    .label {
+        font-size: 1.111vw;
+    }
+
+    .credit-card__field .content {
+        font-size: 0.972vw;
+        padding: 1.527vw 2.222vw 1.527vw 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .credit-card--button {
+        padding: 1.111vw 2.222vw 1.111vw 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .credit-card--button .content {
+        gap: 1.388vw;
+    }
+
+    .choose-button {
+        width: 1.388vw;
+        height: 1.388vw;
+        border: 0.104vw solid #90A3BF;
+        box-sizing: unset;
+    }
+
+    .choose-button:checked {
+        background-color: #3563E9;
+        border: 0.104vw solid #3563E9;
+    }
+
+    .credit-card--button .content .name {
+        font-size: 1.111vw;
+    }
+
+    .logo-paypal {
+        width: 6.944vw;
+        height: 1.666vw;
+    }
+
+    .logo-bitcoin {
+        width: 6.527vw;
+        height: 1.388vw;
+    }
+
+    .Confirmation {
+        gap: 2.222vw;
+        padding: 1.666vw;
+        border-radius: 0.694vw;
+    }
+
+    .Confirmation-form {
+        gap: 2.222vw;
+    }
+
+    .Confirmation-form__agreement {
+        gap: 1.388vw;
+        padding: 1.111vw 2.222vw 1.111vw 2.222vw;
+        border-radius: 0.694vw;
+    }
+
+    .Confirmation-form__agreement .agree-button {
+        width: 1.388vw;
+        height: 1.388vw;
+        border: 0.104vw solid #90A3BF;
+        border-radius: 0.277vw;
+    }
+    
+    .Confirmation-form__agreement .agree-button:checked:after {
+        width: 0.3vw;
+        height: 0.6vw;
+        top: 10%;
+        border-width: 0 0.15vw 0.15vw 0;
+    }
+
+    .Confirmation-form__agreement .content {
+        font-size: 1.111vw;
+    }
+
+    .rent-car-button {
+        width: 9.722vw;
+        height: 3.888vw;
+        border-radius: 0.694vw;
+        font-size: 1.111vw;
+        margin-bottom: unset;
+    }
+
+    .safe-data {
+        gap: 1.111vw;
+    }
+
+    .ic-security-safety {
+        width: 2.222vw;
+    }
+
+    .safe-data__content {
+        gap: 0.555vw;
+    }
+
+    .safe-data__content .title {
+        font-size: 1.111vw;
+    }
+
+    .safe-data__content .content {
+        font-size: 0.972vw;
+    }
+
+    /* footer  */
+    .footer {
+        background-color: #FFFFFF;
+        padding: 5.555vw 4.166vw 4.166vw 4.166vw;
+        gap: 2.5vw;
+    }
+
+    .contact-container {
+        flex-direction: row;
+        justify-content: space-between  ;
+    }
+
+
+    .footer .title {
+        width: 20.277vw;
+        gap: 1.111vw;
+        height: fit-content;
+    }
+
+    .logo {
+        font-size: 2.222vw;
+    }
+
+    .text {
+        font-size: 1.111vw;
+    }
+
+    .resources {
+        gap: 4.166vw;
+    }
+
+    .resources__about, .resources__community, .resources__socials {
+        gap: 1.666vw;
+        margin: 0;
+    }
+
+    .resources__about, .resources__community, .resources__socials{
+        width: 10.555vw;
+    }
+
+    .resources__title {
+        font-size: 1.388vw;
+    }
+
+    .resources__item {
+        font-size: 1.111vw;
+    }
+
+    .legal-link-container {
+        border-top: 1px solid #13131329;
+        padding-top: 2.5vw;
+        flex-direction: row-reverse;
+        gap: unset;
+        justify-content: space-between;
+    }
+    
+    .legal-link__item, .copyright { 
+        font-size: 1.111vw;
+    }
+}

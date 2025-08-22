@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440, initial-scale=1.0">
+  <title>Morent Car Rental</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #f6f7f9;
+        }
+        header {
+            background: #fff;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #3563E9;
+        }
+        .icon{
+          width: 24px;
+          height: 24px;
+        }
+        
+        h1{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0;
+            vertical-align: middle;
+            width: 92px;
+            height: 24px;
+            opacity: 1; 
+            color: #90A3BF;
+            margin-left: 50px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+        input {
+            border: none;         
+            outline: none;        
+            background: transparent; 
+        }
+        .search-bar {
+             display: flex;
+             align-items: center;
+             background: white;
+             border: 1px solid #dcdfe4; 
+             border-radius: 50px; 
+             width: 492px;margin: 20px auto;
+             height: 44px;
+        }
+
+    /* Layout */
+    main {
+      display:grid;
+      grid-template-columns:280px 1fr;
+      gap:24px;
+      padding:24px 32px;
+    }
+    .car-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+
+    }
+
+   .car-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 12px;
+    background: #f8f9fa;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* đẩy footer xuống đáy */
+  }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .car-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .car-type {
+            font-size: 14px;
+            color: #90A3BF;
+        }
+
+        .car-image {
+            max-width: 220px;
+            height: auto;
+            object-fit: contain; /* giữ ảnh không bị méo */
+            margin: 0  12px;
+            display: block;
+        }
+
+        .car-details {
+            display: flex;
+            justify-content: space-between;
+            color: #90A3BF;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .car-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .car-price {
+            font-size: 18px;
+            font-weight: 700;
+            color: #3563E9;
+        }
+
+        .old-price {
+            display: inline-block;
+            font-size: 14px;
+            color: #90A3BF;
+            text-decoration: line-through;
+            margin-left: 6px;
+        }
+    /* Sidebar */
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-family: "Inter", sans-serif;
+}
+
+.filter-group {
+  margin-bottom: 24px;
+}
+
+.filter-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #90a3bf;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #1a202c;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 28px;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #90a3bf;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background: #3563e9;
+  border-color: #3563e9;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.count {
+  color: #90a3bf;
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+/* Price slider */
+.price-slider {
+  width: 100%;
+  margin: 8px 0;
+  -webkit-appearance: none;
+  height: 6px;
+  border-radius: 4px;
+  background: #e5e7eb;
+  outline: none;
+}
+
+.price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #3563e9;
+  cursor: pointer;
+}
+
+.price-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #3563e9;
+  cursor: pointer;
+}
+
+.price-label {
+  font-size: 13px;
+  color: #1a202c;
+  font-weight: 500;
+}
+    
+.filter-group h4 {
+     font-size:16px; margin-bottom:12px; font-weight:600;
+}
+.filter-group label {
+    display:block; margin-bottom:8px; font-size:14px; color:#4a5568;
+}
+.price-range input {
+    width:100%;
+}
+
+ .rent-btn{
+            background: #3563E9;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .rent-btn:hover {
+            background: #254bc9;
+        }
+        button {
+            background: #3563E9;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 30px auto;
+            display: block;
+        }
+        button:hover {
+            background: #254bc9;
+        }
+        footer {
+            background: #fff;
+            padding: 40px 60px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        footer .column {
+            min-width: 150px;
+        }
+        footer a {
+            display: block;
+            margin-bottom: 6px;
+            color: #555;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer-bottom {
+            width: 100%;
+            border-top: 1px solid #ddd;
+            margin-top: 30px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 14px;
+            color: #555;
+        }
+        .pickdrop img{
+            margin-top: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* Khối chứa 3 dropdown */
+        .form-row {
+          display: flex;         
+          gap: 12px;              
+        }
+
+        /* Mỗi card (Location, Date, Time) */
+        .card {
+          flex: 1;                 
+          display: flex;
+          flex-direction: column;  
+        }
+
+        /* Label (Pick-Up, Drop-Off, Date) */
+        .card label {
+          font-size: 12px;
+          font-weight: 600;
+          margin-bottom: 4px;
+          color: #1a202c;          
+        }
+
+        /* Bọc select + icon */
+        .dropdown {
+          position: relative;
+          display: flex;
+          align-items: center;
+          border: 1px solid #ddd;  
+          border-radius: 6px;
+          padding: 4px 8px;
+          background: #fff;
+        }
+
+        /* Select cơ bản */
+        .dropdown select {
+          appearance: none;       
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          border: none;
+          outline: none;
+          font-size: 12px;
+          font-weight: 500;
+          padding-right: 24px;    
+          width: 100%;
+          background: transparent;
+          color: #4a5568;
+          cursor: pointer;
+        }
+        .form-container {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 16px;
+        }
+
+        .swap-btn {
+          background: #3563e9;
+          color: #fff;
+          border-radius: 50%;
+          width: 36px;
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          cursor: pointer;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+          margin-top: 36px; /* canh giữa so với 2 card */
+        }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 16px 20px;
+    gap: 12px;
+  }
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .form-container {
+    flex-direction: column; /* xếp dọc */
+    align-items: stretch;
+  }
+  .swap-btn {
+    margin: 16px auto;
+  }
+  .car-container {
+    grid-template-columns: 1fr; /* chỉ 1 cột */
+  }
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+  </style>
+<header>
+    <div class="logo">MORENT</div>
+    <div class="search-bar">
+          <img src="ảnh/search-normal.png">
+  <input type="text" placeholder="Search something here"><br>
+    <img src="ảnh/filter.png">
+</div>
+<div>
+
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</div>
+    <nav>
+      <img src="ảnh/heart.png" class="icon">
+      <img src="ảnh/Notification.png" class="icon">
+      <img src="ảnh/setting-2.png" class="icon">
+      <img src="ảnh/Image.png" class="icon">
+    </nav>
+</header>
+
+  <!-- Main -->
+  <main>
+   <!-- Sidebar Filter -->
+<aside class="sidebar">
+  <div class="filter-group">
+    <h4 class="filter-title">TYPE</h4>
+    <label class="custom-checkbox">
+      <input type="checkbox" checked>
+      <span class="checkmark"></span>
+      Sport <span class="count">(10)</span>
+    </label>
+    <label class="custom-checkbox">
+      <input type="checkbox" checked>
+      <span class="checkmark"></span>
+      SUV <span class="count">(12)</span>
+    </label>
+    <label class="custom-checkbox">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      MPV <span class="count">(16)</span>
+    </label>
+    <label class="custom-checkbox">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      Sedan <span class="count">(20)</span>
+    </label>
+    <label class="custom-checkbox">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      Coupe <span class="count">(14)</span>
+    </label>
+    <label class="custom-checkbox">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      Hatchback <span class="count">(14)</span>
+    </label>
+  </div>
+
+  <div class="filter-group">
+    <h4 class="filter-title">CAPACITY</h4>
+    <label class="custom-checkbox">
+      <input type="checkbox" checked>
+      <span class="checkmark"></span>
+      2 Person <span class="count">(10)</span>
+    </label>
+    <label class="custom-checkbox">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      4 Person <span class="count">(14)</span>
+    </label>
+    <label class="custom-checkbox">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      6 Person <span class="count">(12)</span>
+    </label>
+    <label class="custom-checkbox">
+      <input type="checkbox" checked>
+      <span class="checkmark"></span>
+      8 or More <span class="count">(16)</span>
+    </label>
+  </div>
+
+  <div class="filter-group">
+  <h4 class="filter-title">PRICE</h4>
+  <input type="range" id="priceRange" min="0" max="100" value="100" class="price-slider">
+  <div class="price-label">Max. $<span id="priceValue">100.00</span></div>
+</div>
+
+<script>
+  const priceRange = document.getElementById("priceRange");
+  const priceValue = document.getElementById("priceValue");
+
+  priceRange.addEventListener("input", function() {
+    priceValue.textContent = parseFloat(priceRange.value).toFixed(2);
+  });
+</script>
+</aside>
+    <!-- Content -->
+    <section>
+     <div class="form-container">
+  <!-- Pick-Up -->
+  <div class="form-section">
+    <div class="section-title">
+      <img src="ảnh/Pick - Up (1).png">
+    </div>
+    <div class="form-row">
+      <div class="card">
+        <label>Locations</label>
+        <div class="dropdown">
+          <select>
+            <option>Select your city</option>
+          </select>
+         <img src="ảnh/arrow-down.png">
+        </div>
+      </div>
+      <div class="card">
+        <label>Date</label>
+        <div class="dropdown">
+          <select>
+            <option>Select your date</option>
+          </select>
+         <img src="ảnh/arrow-down.png">
+        </div>
+      </div>
+      <div class="card">
+        <label>Time</label>
+        <div class="dropdown">
+          <select>
+            <option>Select your time</option>
+          </select>
+          <img src="ảnh/arrow-down.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nút đảo -->
+  <div class="swap-btn"><img src="ảnh/Swap.png"></div>
+
+  <!-- Drop-Off -->
+  <div class="form-section">
+    <div class="section-title">
+     <img src="ảnh/Drop - Off (1).png">
+    </div>
+    <div class="form-row">
+      <div class="card">
+        <label>Locations</label>
+        <div class="dropdown">
+          <select>
+            <option>Select your city</option>
+          </select>
+         <img src="ảnh/arrow-down.png">
+        </div>
+      </div>
+      <div class="card">
+        <label>Date</label>
+        <div class="dropdown">
+          <select>
+            <option>Select your date</option>
+          </select>
+          <img src="ảnh/arrow-down.png">
+        </div>
+      </div>
+      <div class="card">
+        <label>Time</label>
+        <div class="dropdown">
+          <select>
+            <option>Select your time</option>
+          </select>
+          <img src="ảnh/arrow-down.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="car-container">
+  <!-- Car Card 1 -->
+  <div class="car-card">
+    <div class="card-header">
+      <div>
+        <div class="car-title">Koenigsegg</div>
+        <div class="car-type">Sport</div>
+      </div>
+     <i class="fa-regular fa-heart"></i>
+    </div>
+  <img src="ảnh/2385cc01da9bb791587b8022c475d39822c50c17 (1).png" alt="Koenigsegg" class="car-image">
+      <div class="car-details">
+      <div><i class="fa-solid fa-gas-pump"></i> 90L</div>
+      <div><i class="fa-solid fa-gear"></i> Manual</div>
+      <div><i class="fa-solid fa-user"></i> 2 People</div>
+    </div>
+  <div class="car-price">
+    <span>$99.00 <small>/day</small></span>
+    <a class="rent-btn" href="Detail_car_rent/Detail_car_rent.html">Rent Now</a>
+  </div>
+</div>
+  <!-- Car Card 2 -->
+  <div class="car-card">
+    <div class="card-header">
+      <div>
+        <div class="car-title">Nissan GT – R</div>
+        <div class="car-type">Sport</div>
+      </div>
+      <i class="fa-regular fa-heart"></i>
+    </div>
+
+    <img src="ảnh/702f356e48fe531e6fd2626c5d1041dbfcde3341 (1).png" alt="Nissan GT-R" class="car-image">
+
+    <div class="car-details">
+      <div><i class="fa-solid fa-gas-pump"></i> 80L</div>
+      <div><i class="fa-solid fa-gear"></i> Manual</div>
+      <div><i class="fa-solid fa-user"></i> 2 People</div>
+    </div>
+
+    <div class="car-footer">
+      <div class="car-price">
+        <span>$80.00</span>/day <p class="old-price">$100.00</p>
+      </div>
+      <a class="rent-btn" href="Detail_car_rent/Detail_car_rent.html">Rent Now</a>
+    </div>
+  </div>
+
+  <!-- Car Card 3 -->
+  <div class="car-card">
+    <div class="card-header">
+      <div>
+        <div class="car-title">Rolls - Royce</div>
+        <div class="car-type">Sedan</div>
+      </div>
+      <i class="fa-solid fa-heart filled"></i>
+    </div>
+
+    <img src="ảnh/2e45bdb64d6f5df6dab1d18d948223ba47972f21.png" alt="Rolls Royce" class="car-image">
+
+    <div class="car-details">
+      <div><i class="fa-solid fa-gas-pump"></i> 70L</div>
+      <div><i class="fa-solid fa-gear"></i> Manual</div>
+      <div><i class="fa-solid fa-user"></i> 4 People</div>
+    </div>
+
+    <div class="car-footer">
+      <div class="car-price"><span>$96.00</span>/day</div>
+      <a class="rent-btn" href="Detail_car_rent/Detail_car_rent.html">Rent Now</a>
+     </div>
+  </div>
+  <!--car card 4-->
+  <div class="car-card">
+    <div class="card-header">
+      <div>
+        <div class="car-title">All New Rush</div>
+        <div class="car-type">SUV</div>
+      </div>
+      <i class="fa-regular fa-heart"></i>
+    </div>
+
+    <img src="ảnh/509322661844e6b8d2bc7a68f501d79e35f5f4ab (4).png"class="car-image">
+
+    <div class="car-details">
+      <div><i class="fa-solid fa-gas-pump"></i> 70L</div>
+      <div><i class="fa-solid fa-gear"></i> Manual</div>
+      <div><i class="fa-solid fa-user"></i> 6 People</div>
+    </div>
+
+    <div class="car-footer">
+      <div class="car-price">
+        <span>$72.00</span>/day <p class="old-price">$80.00</p>
+      </div>
+      <a class="rent-btn" href="Detail_car_rent/Detail_car_rent.html">Rent Now</a>
+    </div>
+  </div>
+<!--car card 5-->
+  <div class="car-card">
+    <div class="card-header">
+      <div>
+        <div class="car-title">CR-V</div>
+        <div class="car-type">SUV</div>
+      </div>
+      <i class="fa-regular fa-heart"></i>
+    </div>
+
+    <img src="ảnh/92f74dec074acdd579ecaf8742bac9eede524b1f (2).png"class="car-image">
+
+    <div class="car-details">
+      <div><i class="fa-solid fa-gas-pump"></i> 80L</div>
+      <div><i class="fa-solid fa-gear"></i> Manual</div>
+      <div><i class="fa-solid fa-user"></i> 6 People</div>
+    </div>
+
+    <div class="car-footer">
+      <div class="car-price">
+        <span>$80.00</span>
+      </div>
+      <a class="rent-btn" href="Detail_car_rent/Detail_car_rent.html">Rent Now</a>
+    </div>
+  </div>
+<!--car card 6-->
+  <div class="car-card">
+    <div class="card-header">
+      <div>
+        <div class="car-title">All New terios</div>
+        <div class="car-type">SUV</div>
+      </div>
+      <i class="fa-regular fa-heart"></i>
+    </div>
+
+    <img src="ảnh/509322661844e6b8d2bc7a68f501d79e35f5f4ab (4).png"class="car-image">
+
+    <div class="car-details">
+      <div><i class="fa-solid fa-gas-pump"></i> 90L</div>
+      <div><i class="fa-solid fa-gear"></i> Manual</div>
+      <div><i class="fa-solid fa-user"></i> 6 People</div>
+    </div>
+
+    <div class="car-footer">
+      <div class="car-price">
+        <span>$74.00</span>
+      </div>
+      <a class="rent-btn" href="Detail_car_rent/Detail_car_rent.html">Rent Now</a>
+    </div>
+  </div>
+<!--car card 7-->
+  <div class="car-card">
+    <div class="card-header">
+      <div>
+        <div class="car-title">MG ZX Exclusice</div>
+        <div class="car-type">Hatchback</div>
+      </div>
+      <i class="fa-regular fa-heart"></i>
+    </div>
+
+    <img src="ảnh/f699abef3f5cf908bc1ebc5bf5c91aca676e4157 (3).png"class="car-image">
+
+    <div class="car-details">
+      <div><i class="fa-solid fa-gas-pump"></i> 70L</div>
+      <div><i class="fa-solid fa-gear"></i> Manual</div>
+      <div><i class="fa-solid fa-user"></i> 4 People</div>
+    </div>
+
+    <div class="car-footer">
+      <div class="car-price">
+        <span>$76.00</span>/day <p class="old-price">$80.00</p>
+      </div>
+      <a class="rent-btn" href="Detail_car_rent/Detail_car_rent.html">Rent Now</a>
+    </div>
+  </div>
+<!--car card 8-->
+  <div class="car-card">
+    <div class="card-header">
+      <div>
+        <div class="car-title">New MG ZS</div>
+        <div class="car-type">SUV</div>
+      </div>
+      <i class="fa-regular fa-heart"></i>
+    </div>
+
+    <img src="ảnh/2ed7554073defa787d71b948931bdf156be51493 (2).png"class="car-image">
+
+    <div class="car-details">
+      <div><i class="fa-solid fa-gas-pump"></i> 80L</div>
+      <div><i class="fa-solid fa-gear"></i> Manual</div>
+      <div><i class="fa-solid fa-user"></i> 6 People</div>
+    </div>
+
+    <div class="car-footer">
+      <div class="car-price">
+        <span>$80.00</span>
+      </div>
+      <a class="rent-btn" href="Detail_car_rent/Detail_car_rent.html">Rent Now</a>
+    </div>
+  </div>
+<!--car card 9-->
+  <div class="car-card">
+    <div class="card-header">
+      <div>
+        <div class="car-title">MG ZX Excite</div>
+        <div class="car-type">Hatchback</div>
+      </div>
+      <i class="fa-regular fa-heart"></i>
+    </div>
+
+    <img src="ảnh/f699abef3f5cf908bc1ebc5bf5c91aca676e4157 (2).png"class="car-image">
+
+    <div class="car-details">
+      <div><i class="fa-solid fa-gas-pump"></i> 90L</div>
+      <div><i class="fa-solid fa-gear"></i> Manual</div>
+      <div><i class="fa-solid fa-user"></i> 4 People</div>
+    </div>
+
+    <div class="car-footer">
+      <div class="car-price">
+        <span>$74.00</span>
+      </div>
+      <a class="rent-btn" href="Detail_car_rent/Detail_car_rent.html">Rent Now</a>
+    </div>
+  </div>
+</div>
+<button>Show more car</button>
+
+<footer>
+    <div class="column">
+        <div class="logo">MORENT</div>
+        <p>Our vision is to provide convenience and help increase your sales business.</p>
+    </div>
+    <div class="column">
+        <h4>About</h4>
+        <a href="#">How it works</a>
+        <a href="#">Featured</a>
+        <a href="#">Partnership</a>
+        <a href="#">Business Relation</a>
+    </div>
+    <div class="column">
+        <h4>Community</h4>
+        <a href="#">Events</a>
+        <a href="#">Blog</a>
+        <a href="#">Podcast</a>
+        <a href="#">Invite a friend</a>
+    </div>
+    <div class="column">
+        <h4>Socials</h4>
+        <a href="#">Discord</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+    </div>   
+   
+     <div class="footer-bottom">
+        <p>©2022 MORENT. All rights reserved</p>
+            <a href="#">Privacy & Policy</a>
+            <a href="#">Terms & Condition</a>
+</div>
+</footer>
+</body>
+</html>

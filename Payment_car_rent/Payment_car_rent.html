@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment car rent</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            
+            <!-- nút logo dẫn đến trang chủ -->
+            <a href="Detail_car_rent.html" class="logo">MORENT</a>
+
+            <!-- icon và image profile -->
+            <div class="button-and-image">
+
+                <a href="" class="image-profile">
+                    <img src="images/header_images/Like.png" alt="Image Profile" class="image-profile--mobile">
+                </a>
+
+                <a href="" class="image-profile">
+                    <img src="images/header_images/Notification.png" alt="Image Profile" class="image-profile--mobile">
+                </a>
+
+                <a href="" class="image-profile">
+                    <img src="images/header_images/Settings.png" alt="Image Profile" class="image-profile--mobile">
+                </a>
+
+
+                <a href="" class="image-profile active">
+                    <img src="images/header_images/Image.png" alt="Image Profile" class="image-profile--mobile">
+                </a>
+            
+            </div>
+
+        </header>
+
+        <main class="main-content">
+            <div class="Rental-Summary">
+                <div class="title">
+                    <p class="title__target">Rental Summary</p>
+                    <p class="title__info">Prices may change depending on the length of the rental and the price of your rental car.</p>
+                </div>
+
+                <div class="content-product">
+                    <img src="images/main-content/rental_summary/Car.png" alt="car image" class="content-product__image">
+                    <div class="content-product__info">
+                        <p class="content-product__name">Nissan GT - R</p>
+                        <div class="content-product__rate">
+                            <img src="images/main-content/rental_summary/star.png" alt="star review" class="star">
+                            <p class="number-review">440+ Reviewer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <div class="price__item">
+                        <p class="subtotal">Subtotal</p>
+                        <p class="money">$80.00</p>
+                    </div>
+                    <div class="price__item">
+                        <p class="tax">Tax</p>
+                        <p class="money">$0</p>
+                    </div>
+                </div>
+
+                <div class="Promo">
+                    <input type="text" class="Promo__code" placeholder="Apply promo code">
+                    <button class="Promo__submit">Apply now</button>
+                </div>
+
+                <div class="total-price">
+                    <div class="total-price__content">
+                        <p class="total-price__content__title">Total Rental Price</p>
+                        <p class="total-price__content__rental">Overall price rental</p>
+                    </div>
+                    <p class="total-price__money">$80.00</p>
+                </div>
+            </div>
+
+            <div class="step-rent-car">
+                <div class="Billing-Info-form">
+                    <div class="title">
+                        <div class="title__target">
+                            <p class="title__target__content1">Billing Info</p>
+                            <p class="title__target__content2">Please enter your billing info</p>
+                        </div>
+                        <p class="order-step">Step 1 of 4</p>
+                    </div>
+
+                    <div class="Billing-Info">
+                        <div class="Billing-Info__item">
+                            <p class="title">Name</p>
+                            <input type="text" class="content" placeholder="Your name">
+                        </div>
+                        <div class="Billing-Info__item">
+                            <p class="title">Address</p>
+                            <input type="text" class="content" placeholder="Address">
+                        </div>
+                        <div class="Billing-Info__item">
+                            <p class="title">Phone Number</p>
+                            <input type="text" class="content" placeholder="Phone number">
+                        </div>
+                        <div class="Billing-Info__item">
+                            <p class="title">Town or city</p>
+                            <input type="text" class="content" placeholder="Town or city">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Rental-Info-form">
+                    <div class="title">
+                        <div class="title__target">
+                            <p class="title__target__content1">Rental Summary</p>
+                            <p class="title__target__content2">Please select your rental date</p>
+                        </div>
+                        <p class="order-step">Step 2 of 4</p>
+                    </div>
+
+                    <div class="pick-up-info">
+                        <div class="pick-up-info__title">
+                            <div class="title-circle"></div>
+                            <p class="title-content">Pickup</p>
+                        </div>
+
+                        <div class="pick-up-info__container">
+                            <div class="pick-up-info__field">
+                                <label class="pick-up-info__label">Locations</label>
+                                <select class="pick-up-info__select">
+                                    <option disabled selected hidden>Select your city</option>
+                                    <option>Ha Noi</option>
+                                    <option>Ho Chi Minh</option>
+                                </select>
+                            </div>
+                            <div class="pick-up-info__field">
+                                <label class="pick-up-info__label">Time</label>
+                                <select class="pick-up-info__select">
+                                    <option disabled selected hidden>Select your time</option>
+                                    <option>1 o'clock</option>
+                                    <option>2 o'clock</option>
+                                    <option>3 o'clock</option>
+                                    <option>4 o'clock</option>
+                                    <option>5 o'clock</option>
+                                    <option>6 o'clock</option>
+                                    <option>7 o'clock</option>
+                                    <option>8 o'clock</option>
+                                    <option>9 o'clock</option>
+                                    <option>10 o'clock</option>
+                                    <option>11 o'clock</option>
+                                    <option>12 o'clock</option>
+                                    <option>13 o'clock</option>
+                                    <option>14 o'clock</option>
+                                    <option>15 o'clock</option>
+                                    <option>16 o'clock</option>
+                                    <option>17 o'clock</option>
+                                    <option>18 o'clock</option>
+                                    <option>19 o'clock</option>
+                                    <option>20 o'clock</option>
+                                    <option>21 o'clock</option>
+                                    <option>22 o'clock</option>
+                                    <option>23 o'clock</option>
+                                    <option>24 o'clock</option>
+                                </select>
+                            </div>
+                            <div class="pick-up-info__field">
+                                <label class="pick-up-info__label">Date</label>
+                                <select class="pick-up-info__select">
+                                    <option disabled selected hidden>Select your date</option>
+                                    <option>01/01/1111</option>
+                                    <option>09/09/9999</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drop off -->
+                    <div class="pick-up-info">
+                        <div class="pick-up-info__title">
+                            <div class="title-circle drop-off"></div>
+                            <p class="title-content">Drop Off</p>
+                        </div>
+
+                        <div class="pick-up-info__container">
+                            <div class="pick-up-info__field">
+                                <label class="pick-up-info__label">Locations</label>
+                                <select class="pick-up-info__select">
+                                    <option disabled selected hidden>Select your city</option>
+                                    <option>Ha Noi</option>
+                                    <option>Ho Chi Minh</option>
+                                </select>
+                            </div>
+                            <div class="pick-up-info__field">
+                                <label class="pick-up-info__label">Time</label>
+                                <select class="pick-up-info__select">
+                                    <option disabled selected hidden>Select your time</option>
+                                    <option disabled selected hidden>Select your time</option>
+                                    <option>1 o'clock</option>
+                                    <option>2 o'clock</option>
+                                    <option>3 o'clock</option>
+                                    <option>4 o'clock</option>
+                                    <option>5 o'clock</option>
+                                    <option>6 o'clock</option>
+                                    <option>7 o'clock</option>
+                                    <option>8 o'clock</option>
+                                    <option>9 o'clock</option>
+                                    <option>10 o'clock</option>
+                                    <option>11 o'clock</option>
+                                    <option>12 o'clock</option>
+                                    <option>13 o'clock</option>
+                                    <option>14 o'clock</option>
+                                    <option>15 o'clock</option>
+                                    <option>16 o'clock</option>
+                                    <option>17 o'clock</option>
+                                    <option>18 o'clock</option>
+                                    <option>19 o'clock</option>
+                                    <option>20 o'clock</option>
+                                    <option>21 o'clock</option>
+                                    <option>22 o'clock</option>
+                                    <option>23 o'clock</option>
+                                    <option>24 o'clock</option>
+                                </select>
+                            </div>
+                            <div class="pick-up-info__field">
+                                <label class="pick-up-info__label">Date</label>
+                                <select class="pick-up-info__select">
+                                    <option disabled selected hidden>Select your date</option>
+                                    <option>01/01/1111</option>
+                                    <option>09/09/9999</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="Payment-Method">
+                    <div class="title">
+                        <div class="title__target">
+                            <p class="title__target__content1">Payment Method</p>
+                            <p class="title__target__content2">Please enter your payment method</p>
+                        </div>
+                        <p class="order-step">Step 3 of 4</p>
+                    </div>
+
+                    <div class="credit-card-info">
+                        <div class="credit-card">
+                            <div class="credit-card__header">
+                                <div class="credit-card__title">
+                                    <div class="title-circle"></div>
+                                    <p class="title-content">Credit Card</p>
+                                </div>
+                                <div class="credit-card__image">
+                                    <img src="images/main-content/payment_method/Visa_Inc._logo 1.png" alt="visa icon" class="visa">
+                                    <img src="images/main-content/payment_method/mc.png" alt="master card icon" class="mc-icon">
+                                </div>
+                            </div>
+
+                            <div class="credit-card__form">
+                                <div class="credit-card__field">
+                                    <label class="label">Card number</label>
+                                    <input type="text" class="content" placeholder="Card number">
+                                </div>
+                                <div class="credit-card__field">
+                                    <label class="label">Card holder</label>
+                                    <input type="text" class="content" placeholder="Card holder">
+                                </div>
+                                <div class="credit-card__field">
+                                    <label class="label">Expration Date</label>
+                                    <input type="text" class="content" placeholder="DD / MM / YY">
+                                </div>
+                                <div class="credit-card__field">
+                                    <label class="label">CVC</label>
+                                    <input type="text" class="content" placeholder="CVC">
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="credit-card--button">
+                        <div class="content">
+                            <input type="checkbox" class="choose-button">
+                            <p class="name">PayPal</p>
+                        </div>
+                        <img src="images/main-content/payment_method/PayPal.png" alt="logo paypal" class="logo-paypal">
+                    </div>
+
+                    <div class="credit-card--button">
+                        <div class="content">
+                            <input type="checkbox" class="choose-button">
+                            <p class="name">Bitcoin</p>
+                        </div>
+                        <img src="images/main-content/payment_method/Bitcoin.png" alt="logo bitcoin" class="logo-bitcoin">
+                    </div>
+                </div>
+
+                    
+                </div>
+
+                <div class="Confirmation">
+                    <div class="title">
+                        <div class="title__target">
+                            <p class="title__target__content1">Confirmation</p>
+                            <p class="title__target__content2">We are getting to the end. Just few clicks and your rental is ready!</p>
+                        </div>
+                        <p class="order-step">Step 4 of 4</p>
+                    </div>
+
+                    <div class="Confirmation-form">
+                        <div class="Confirmation-form__agreement">
+                            <input type="checkbox" class="agree-button">
+                            <p class="content">I agree with sending an Marketing and newsletter emails. No spam, promissed!</p>
+                        </div>
+                        <div class="Confirmation-form__agreement">
+                            <input type="checkbox" class="agree-button">
+                            <p class="content">I agree with our terms and conditions and privacy policy.</p>
+                        </div>
+                    </div>
+
+                    <a href="" class="rent-car-button">Rent Now</a>
+
+                    <div class="safe-data">
+                        <img src="images/main-content/confimation/ic-security-safety.png" alt="icon safety" class="ic-security-safety">
+                        <div class="safe-data__content">
+                            <p class="title">All your data are safe</p>
+                            <p class="content">We are using the most advanced security to provide you the best experience ever.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <!-- phần footer của trang web -->
+        <footer class="footer">
+
+            <div class="contact-container">
+                <div class="title">
+                    <a href="Detail_car_rent.html" class="logo">MORENT</a>
+                    <p class="text">Our vision is to provide convenience and help increase your sales business.</p>
+                </div>
+
+            <div class="resources">
+                <div class="resources__about">
+                    
+                    <p class="resources__title">About</p>
+                    
+                    <p class="resources__item">
+                        How it works
+                    </p>
+                    <p class="resources__item">
+                        Featured
+                    </p>
+                    <p class="resources__item">
+                        Partnership
+                    </p>
+                    <p class="resources__item">
+                        Bussiness Relation
+                    </p>
+                </div>
+                <div class="resources__socials">
+                    <p class="resources__title">Socials</p>
+                    
+                    <p class="resources__item">
+                        Discord
+                    </p>
+                    <p class="resources__item">
+                        Instagram
+                    </p>
+                    <p class="resources__item">
+                        Twitter
+                    </p>
+                    <p class="resources__item">
+                        Facebook
+                    </p>
+                </div>
+                <div class="resources__community">
+                    <p class="resources__title">Community</p>
+                    
+                    <p class="resources__item">
+                        Events
+                    </p>
+                    <p class="resources__item">
+                        Blog
+                    </p>
+                    <p class="resources__item">
+                        Podcast
+                    </p>
+                    <p class="resources__item">
+                        Invite a friend
+                    </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="legal-link-container">
+                <div class="legal-link">
+                    <div class="legal-link__item">
+                        Privacy & Policy
+                    </div>
+                    <div class="legal-link__item">
+                        Terms & Condition
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    ©2022 MORENT. All rights reserved
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

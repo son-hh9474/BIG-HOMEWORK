@@ -1,0 +1,666 @@
+/* Reset CSS cơ bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nền và màu chữ mặc định */
+body {
+    background: #f8f9fc;
+    color: #333;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+/*Bố trí tổng thể phần trên*/
+.top {
+    display: flex;              /* Sắp xếp con theo hàng ngang */
+    align-items: center;        /*Căn giữa theo chiều dọc */
+    justify-content: space-between; /*Cách đều hai bên */
+    margin-bottom: 1px;
+    width: 100%;
+    min-height: auto;
+    border: 1px;
+    background-color: #FFFFFF;
+    border: 1px solid #C3D4E966;
+}
+/*Ẩn top mobile*/
+.topmobile{
+    display: none;
+}
+
+.top h2 {
+    padding-top: 40px;
+    margin-left: 60px;
+    padding-bottom: 40px;
+    font-size: 32px;
+    color: #3563E9;
+    width: auto;
+    height: auto; 
+    cursor: pointer;
+}
+
+/* Thanh tìm kiếm */
+/* Container ô tìm kiếm */
+.search {
+    display: flex;
+    align-items: center; 
+    border: 1px solid #C3D4E966;
+    border-radius: 70px;
+    padding: 0 12px;
+    width: 492px;
+    height: 44px;
+}
+/*Ẩn search mobile*/
+.searchmobile{
+    display: none;
+}
+
+/* Icon */
+.search img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* ô input */
+.search input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    flex: 1;
+}
+
+/*icon điều hướng*/
+.control{
+    display: flex;          /* sắp xếp icon ngang hàng */
+    align-items: center;    /* căn giữa icon theo chiều dọc */
+    width: 236px;
+    gap: 20px;
+}
+.control img {
+    width: 44px;
+    height: 44px;
+    border: 1px #C3D4E966;
+    border-radius: 70px;
+    cursor: pointer;
+}
+
+.control img:hover{
+    transform: scale(1.2);/*Phóng to*/
+    background-color:#eaecef ; /* hiệu ứng hover */
+}
+
+/* Bố cục tổng thể: sidebar + main */
+.dashboard {
+    display: flex;
+    width: 100%;
+    min-height: auto;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+    background: #fff;
+    width: 286px;
+    height: 900px;
+    border-right: 1px solid #C3D4E966;
+    margin-top: 0px;
+    padding-top: 0px;
+    overflow-y: auto;   /* cho phép cuộn nội dung khi quá cao */
+}
+
+.inside{
+    display: flex;             
+    flex-direction: column;
+    width: 220px;
+    height: 644px;
+    padding: 36px 34px 220px 32px;
+    gap:42px;
+}
+/*Phần trên của inside*/
+.topinside{
+    display: flex;             
+    flex-direction: column;
+    width: 132px;
+    height: 328px;
+    top: 58px;
+    right: 88px;
+    gap:60px;
+}
+/*Phần dưới của inside*/
+.botinside{
+    display: flex;             
+    flex-direction: column;
+    width: 220px;
+    height: 198px;
+    top: 446px;
+    gap:16px;
+}
+/*Phần logout*/
+.logout{
+    margin-top: auto; /* đẩy Log Out xuống cuối sidebar */
+    padding: 20px 0;}
+.logout a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+}
+
+.sidebar h5 { 
+    font-family:sans-serif ;
+    margin-bottom: 20px;
+    color: #94A7CB66 ;
+    width: 88px;
+    height: 16px;
+    font-size: 12px;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 10px 0;
+    color: #555;
+    text-decoration: none;
+} 
+.sidebar a:hover{
+    background: #f0f2f5;
+    border-radius: 8px;
+}
+.sidebar nav a.active {  
+    
+    color: #fbfbfb;           
+    background-color: #3563E9; /* Màu nền bao quanh chữ */
+    border-radius: 10px;        
+    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+
+
+/* ===== Nội dung chính ===== */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Lưới chia cột nội dung */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start; /* để các khối bám lên trên */
+}
+/* Details Rental chiếm hết chiều cao bên trái */
+.rental-details {
+    grid-column: 1;        /* nằm ở cột 1 */
+    grid-row: 1 / span 2;  /* kéo dài 2 hàng để bằng chiều cao cột phải */
+}
+
+/* Top Cars và Transactions sẽ tự động nằm cột phải (cột 2) */
+.top-cars {
+    grid-column: 2;
+    grid-row: 1;
+}
+.transactions {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* Khối thông tin thuê xe */
+.rental-details, .transactions {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.top-cars img{
+    width: 100%;
+    max-width: 524px;
+    height: auto;
+    top: 32px;
+    left: 884px;
+    border-radius: 10px;
+
+}
+
+/* Bản đồ */
+.map {
+    background: #e9ecef;
+    width: 100%;
+    max-width: 486px;
+    height: auto; 
+}
+.map img{
+    max-width: 100%;
+    height: auto; 
+} 
+/* Thông tin xe */
+.car-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.car-info img {
+    width: 132px;
+    height: 72px;
+    border-radius: 8px;
+    margin-top: 32px;
+}
+
+.car-id {
+  margin-left: auto;
+  font-size: 14px;
+  color: #3D5278;
+}
+
+.car-info h4 {
+   font-style:bold;
+   font-size: 24px;
+   color: #1A202C;
+}
+
+.car-info p {
+    color: #3D5278;
+    font-size: 14px;
+}
+
+/**/
+
+.pickdrop img{
+    margin-bottom: 20px;
+    margin-top: 32px;
+}
+
+/* Khối chứa 3 dropdown */
+.form-row {
+  display: flex;          /* sắp xếp theo hàng ngang */
+  gap: 16px;              /* khoảng cách giữa các ô */
+}
+
+/* Mỗi card (Location, Date, Time) */
+.card {
+  flex: 1;                /* chia đều độ rộng cho 3 ô */
+  display: flex;
+  flex-direction: column; /* label trên, dropdown dưới */
+}
+
+/* Label (Pick-Up, Drop-Off, Date) */
+.card label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Bọc select + icon */
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Select cơ bản */
+.dropdown select {
+  appearance: none;   /* ẩn mũi tên mặc định */
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
+  border: none;
+  outline: none;
+  font-size: 12px;
+  padding-right: 24px; /* chừa chỗ cho icon */
+  width: 100%;
+  background: transparent;
+}
+
+/* Icon mũi tên */
+.dropdown .arrow {
+  position: absolute;
+  right: 8px;
+  pointer-events: none; /* không ảnh hưởng click */
+}
+
+/* Giá thuê */
+.price {
+    position: relative;
+    margin-top: 76px;
+    font-size: 20px;
+    font-weight: 700;
+
+    display: flex;                  /* dùng flexbox */
+    justify-content: space-between; /* chữ bên trái, giá bên phải */
+    align-items: center;            /* căn giữa theo chiều dọc */
+} 
+
+.price p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #90A3BF;
+
+    margin-top: 8px; /* tạo khoảng cách dưới */
+    flex-basis: 100%; /* đảm bảo xuống dòng dưới */
+}
+
+.pricetext {
+  display: flex;
+  flex-direction: column; /* để chữ và p xếp dọc */
+  gap: 4px;               /* khoảng cách nhỏ giữa 2 dòng */
+}
+
+.pricetext p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #90A3BF;
+  margin: 0; /* bỏ margin mặc định */
+}
+
+.price strong{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/*Ẩn giá thuê mobile*/
+.pricemobile{
+    display: none;
+}
+
+/**/
+.itemtransaction{
+    width: 100%;
+    max-width: 476px;
+    height: auto;
+    /* top: 80px;
+    left: 24px;
+    gap: 16px; */
+}
+
+/* View All */
+.transactions .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* h3 bên trái, view bên phải */
+  margin-bottom: 32px;            /* tạo khoảng cách với bảng */
+}
+
+.view  {
+  font-size: 12px;
+  color: #3563E9;
+  cursor: pointer; 
+  padding: 24px 24px; 
+}
+
+.item{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.item img {
+  width: 60px;
+  height: auto;
+  border-radius: 8px;
+}
+.item-text {
+  flex: 1; /* chiếm khoảng giữa */
+}
+
+.item-text h4 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.item-text p {
+  font-size: 12px;
+  color: #90A3BF;
+}
+
+.item-price {
+  text-align: right;
+}
+.item-price p {
+  font-size: 12px;
+  color: #90A3BF;
+}
+.item-price strong {
+  font-size: 16px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* ===== Dark mode ===== */
+body.dark {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+body.dark .top{
+    background: #2c2c2c;
+    color: #fff;
+}
+
+body.dark .topmobile{
+    background: #2c2c2c;
+    color: #fff;
+}
+
+body.dark .search input{
+    background: #2c2c2c;
+    color: #fff;
+}
+
+body.dark .searchmobile input{
+    background: #2c2c2c;
+    color: #fff;
+}
+
+body.dark .sidebar {
+    background: #2c2c2c;
+    color: #fff;
+}
+
+body.dark .rental-details,
+body.dark .top-cars,
+body.dark .transactions {
+    background: #2c2c2c;
+    color: #fff;
+}
+
+/*Giao diện mobile*/
+
+/* MOBILE RESPONSIVE (max-width: 768px) */
+@media (max-width: 768px) {
+  /* ẩn desktop */
+  .top { 
+    display: none; 
+    }   
+    /*Top mobile*/
+    .topmobile { 
+        display: flex; 
+        flex-direction: column;
+        gap: 12px;
+        background: #fff;
+        padding: 12px;
+    }
+
+    /* Hàng trên chứa menu + avatar */
+    .topmobile .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+/*Nút menu*/
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 24px;
+    margin-top: 24px;
+}
+/*Logo*/
+.topmobile h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #3563E9;
+  }
+/*Ẩn thanh search desktop*/
+  .search {
+    display: none;
+  }
+/*Thanh search mobile*/
+  .searchmobile{
+    display: flex;
+    align-items: center; 
+    border: 1px solid #C3D4E966;
+    border-radius: 70px;
+    margin-left: 24px;
+    min-height:auto;
+    width: 70%;       /* thanh search 70% width */
+    order: 3;          /* đưa xuống dưới logo */
+    margin-bottom:32px ;
+  }
+
+  /* Icon */
+.searchmobile img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* ô input */
+.searchmobile input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    flex: 1;
+}
+
+  /* Control riêng cho mobile */
+.control-mobile {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* đẩy avatar sang phải */
+}
+
+.control-mobile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+  /* Sidebar ẩn đi */
+   .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 240px;
+    height: 100%;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  .sidebar.active {
+    left: 0;
+  }  
+   
+
+  /* Dashboard layout dọc */
+  .dashboard {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* Tất cả section thành 1 cột */
+  .content {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Reset lại vị trí grid cho mobile */
+  .rental-details,
+  .transactions,
+  .top-cars {
+    grid-column: 1 / -1; /* chiếm hết chiều ngang */
+    grid-row: auto;      /* trả về mặc định */
+  }
+
+  /* Map full width */
+  .map img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 3 dropdown xếp dọc */
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /*Ẩn giá thuê desktop*/
+  .price{
+    display: none;
+  }
+  /* Giá thuê mobile */
+.pricemobile {
+    position: relative;
+    margin-top: 76px;
+    font-size: 20px;
+    font-weight: 700;
+
+    display: flex;                  /* dùng flexbox */
+    justify-content: space-between; /* chữ bên trái, giá bên phải */
+    align-items: center;            /* căn giữa theo chiều dọc */
+} 
+
+.pricemobile p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #90A3BF;
+
+    margin-top: 8px; /* tạo khoảng cách dưới */
+    flex-basis: 100%; /* đảm bảo xuống dòng dưới */
+}
+
+.pricetext {
+  display: flex;
+  flex-direction: column; /* để chữ và p xếp dọc */
+  gap: 4px;               /* khoảng cách nhỏ giữa 2 dòng */
+}
+
+.pricetext p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #90A3BF;
+  margin: 0; /* bỏ margin mặc định */
+}
+
+.pricemobile strong{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+  /* Ô Recent Transaction item nhỏ hơn */
+  .item img {
+    width: 60px;
+    height: auto;
+  }
+
+  .top-cars img {
+    width: 100%;
+    height: auto;
+  }
+}
