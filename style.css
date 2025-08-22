@@ -444,6 +444,11 @@ body.dark .top{
     color: #fff;
 }
 
+body.dark .topmobile{
+    background: #2c2c2c;
+    color: #fff;
+}
+
 body.dark .search input{
     background: #2c2c2c;
     color: #fff;
@@ -502,6 +507,7 @@ body.dark .transactions {
 /*Logo*/
 .topmobile h2 {
     font-size: 24px;
+    margin-bottom: 24px;
     color: #3563E9;
   }
 /*Ẩn thanh search desktop*/
@@ -515,10 +521,10 @@ body.dark .transactions {
     border: 1px solid #C3D4E966;
     border-radius: 70px;
     margin-left: 24px;
-    padding-top: -32px;
     min-height:auto;
     width: 70%;       /* thanh search 70% width */
     order: 3;          /* đưa xuống dưới logo */
+    margin-bottom:32px ;
   }
 
   /* Icon */
