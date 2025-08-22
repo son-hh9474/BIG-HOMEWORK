@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- gan file CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="top"> 
+        <h2>MORENT</h2> <!-- Logo/tiêu đề -->
+        <!-- Thanh tìm kiếm desktop-->
+        <div class="search">
+            <img src="images/search-normal.png" alt="Search" >
+            <input type="text" placeholder="Search something here...">
+            <img src="images/filter.png" alt="Search" >
+        </div>
+        <div class="control">
+            <img src="images/heart.png" alt="Search" style="width:24px; height:24px;" >
+            <img src="images/notification.png" alt="Search" style="width:24px; height:24px;">
+            <img src="images/setting-2.png" alt="Search" style="width:24px; height:24px;">
+            <img src="images/Image.png" alt="Search" style="width:24px; height:24px;">
+        </div>     
+    </div>
+
+    <!-- Top mobile -->
+    <div class="topmobile">
+        <div class="row">
+
+            <!-- Nút menu chỉ hiện trên mobile -->
+        <button class="menu-toggle" id="menuToggle">
+            <img src="images/menu.png" alt="menu">
+        </button>
+
+            <div class="control-mobile">
+                <img src="images/Image.png" alt="avatar">
+            </div>
+    </div>
+
+    <!-- Logo nằm dưới menu + avatar -->
+    <h2>MORENT</h2>
+
+    <div class="searchmobile">
+        <img src="images/search-normal.png" alt="Search">
+        <input type="text" placeholder="Search something here...">
+        <img src="images/filter.png" alt="Search">
+    </div>
+    </div>
+
+    <div class="dashboard">
+
+        <!-- ===== Sidebar bên trái ===== -->
+        <aside class="sidebar">  
+            <!-- Menu điều hướng -->
+             <div class="inside">
+                    <h5>MAIN MENU</h5>
+                <div class="finside">
+                <nav>
+                    <a href="#" class="active">
+                        <img src="images/home.png" alt="Dashboard" style="width:24px; height:24px;">
+                        Dashboard
+                    </a>
+                    <a href="#">
+                        <img src="images/car.png" alt="Dashboard" style="width:24px; height:24px;">
+                        Car Rent
+                    </a>
+                    <a href="#">
+                        <img src="images/chart.png" alt="Dashboard" style="width:24px; height:24px;">
+                        Insight
+                    </a>
+                    <a href="#">
+                        <img src="images/empty-wallet-change.png" alt="Dashboard" style="width:24px; height:24px;">
+                        Reimburse
+                    </a>
+                    <a href="#">
+                        <img src="images/message.png" alt="Dashboard" style="width:24px; height:24px;">
+                        Inbox
+                    </a>
+                    <a href="#">
+                        <img src="images/calendar.png" alt="Dashboard" style="width:24px; height:24px;">
+                        Calendar
+                    </a>
+                    
+                </nav>
+                </div>
+                <h5>PREFERENCES</h5>
+                <div class="botinside">
+                    <nav>
+                    <a href="#">
+                        <img src="images/setting.png" alt="Dashboard" style="width:24px; height:24px;">
+                        Settings
+                    </a>
+                    <a href="#">
+                        <img src="images/info-circle.png" alt="Dashboard" style="width:24px; height:24px;">
+                        Help & Center
+                    </a>
+                    <a href="#" id="darkToggle">
+                       <img src="images/briefcase.png" alt="Dashboard" style="width:24px; height:24px;">
+                        Dark Mode
+                    </a>
+                    </nav>
+                </div>
+                <div class="logout">
+                <nav>
+                    <a href="#">
+                        <img src="images/logout.png" alt="Dashboard"
+                        style="width:24px; height:24px;">
+                        Log Out
+                    </a>
+                </nav>
+                </div>
+                <!-- Nút bật tắt Dark Mode -->
+                
+
+             </div>
+            
+        </aside>
+
+        <!-- ===== Nội dung chính ===== -->
+        <main class="main">
+
+           
+
+            <!-- Lưới bố cục nội dung -->
+            <div class="content">
+                <!-- Khối thông tin thuê xe -->
+                <section class="rental-details">
+                    <h3>Details Rental</h3>
+                    <!-- Bản đồ -->
+                    <div class="map">
+                        <div class="route">
+                            <img src="images/Maps.png" alt="Map">
+                        </div>
+                    </div>
+                    <!-- Thông tin xe -->
+                    <div class="car-info">
+                        <img src="images/Look.png" alt="Nissan GT-R">
+                        <div>
+                            <h4>Nissan GT-R</h4>
+                            <p>Sport Car</p>
+                        </div>
+                        <span class="car-id">#9761</span>
+                    </div>
+
+                    <!-- Pick up -->
+                    <div class="pickdrop">
+                        <img src="images/Pick - Up.png" alt="pick up">
+                    </div>
+                
+                    <div class="form-row">     
+                        <!-- Location-->              
+                        <div class="card">
+                            <label>Locations</label>
+                            <div class="dropdown">
+                                <select>
+                                    <option>Kota Semarang</option>
+                                </select>
+                                <!-- icon mũi tên -->
+                                <span class="arrow"><img src="images/arrow-down.png" alt="arrow"></span>
+                            </div>
+                        </div>
+                        <!-- Date-->
+                        <div class="card">
+                            <label>Date</label>
+                            <div class="dropdown">
+                                <select>
+                                    <option>20 July 2022</option>
+                                </select>
+                                <!-- icon mũi tên -->
+                                <span class="arrow"><img src="images/arrow-down.png" alt="arrow"></span>
+                            </div>
+                        </div>
+                        <!-- Time-->
+                        <div class="card">
+                            <label>Time</label>
+                            <div class="dropdown">
+                                <select>
+                                    <option>07.00</option>
+                                </select>
+                                <!-- icon mũi tên -->
+                                <span class="arrow"><img src="images/arrow-down.png" alt="arrow"></span>
+                            </div>
+                        </div>
+                    </div>      
+
+                    <!-- Drop off -->
+                    <div class="pickdrop">
+                        <img src="images/Drop - Off.png" alt="drop off">
+                    </div>
+                
+                    <div class="form-row">     
+                        <!-- Location-->              
+                        <div class="card">
+                            <label>Locations</label>
+                            <div class="dropdown">
+                                <select>
+                                    <option>Kota Semarang</option>
+                                </select>
+                                <!-- icon mũi tên -->
+                                <span class="arrow"><img src="images/arrow-down.png" alt="arrow"></span>
+                            </div>
+                        </div>
+                        <!-- Date-->
+                        <div class="card">
+                            <label>Date</label>
+                            <div class="dropdown">
+                                <select>
+                                    <option>21 July 2022</option>
+                                </select>
+                                <!-- icon mũi tên -->
+                                <span class="arrow"><img src="images/arrow-down.png" alt="arrow"></span>
+                            </div>
+                        </div>
+
+                        <!-- Time-->
+                        <div class="card">
+                            <label>Time</label>
+                            <div class="dropdown">
+                                <select>
+                                    <option>01.00</option>
+                                </select>
+                                <!-- icon mũi tên -->
+                                <span class="arrow"><img src="images/arrow-down.png" alt="arrow"></span>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <!-- Giá thuê desktop -->
+                    <div class="price">
+                        <div class="pricetext">
+                            Total Rental Price
+                            <p>Overall price and includes rental discount</p>
+                        </div>
+                        <strong>$80.00</strong>
+                    </div>
+
+                    <!-- Giá thuê mobile -->
+                    <div class="pricemobile">
+                        <div class="pricetext">
+                            Total Rental Price
+                            <p>Overall price rental</p>
+                        </div>
+                        <strong>$80.00</strong>
+                    </div>
+                </section>
+
+                <!-- Khối biểu đồ top xe thuê -->
+                <section class="top-cars">
+                    <img src="images/Top 5 Car Rental.png" alt="Top 5">
+                </section>
+
+                <!-- Bảng giao dịch gần đây -->
+                <section class="transactions">
+                    <div class="header">
+                        <h3>Recent Transaction</h3>
+                        <span class="view">View All</span>
+                    </div>  
+                        
+                    <div class="itemtransaction">
+                        <!-- Item 1 -->
+                        <div class="item">
+                            <img src="images/car1.png" alt="">
+                            <div class="item-text">
+                                <h4>Nissan GT-R</h4>
+                                <p>Sport Car</p>
+                            </div>
+                            <div class="item-price">
+                                <p>20 July</p>
+                                <strong>$80.00</strong>
+                            </div>
+                            </div>
+                        <!-- Item 2 -->
+                         <div class="item">
+                            <img src="images/car2.png" alt="">
+                            <div class="item-text">
+                                <h4>Nissan GT-R</h4>
+                                <p>Sport Car</p>
+                            </div>
+                            <div class="item-price">
+                                <p>20 July</p>
+                                <strong>$80.00</strong>
+                            </div>
+                            </div>
+                        <!-- Item 3 -->
+                         <div class="item">
+                            <img src="images/car3.png" alt="">
+                            <div class="item-text">
+                                <h4>Nissan GT-R</h4>
+                                <p>Sport Car</p>
+                            </div>
+                            <div class="item-price">
+                                <p>20 July</p>
+                                <strong>$80.00</strong>
+                            </div>
+                        </div>
+                        <!-- Item 4 -->
+                         <div class="item">
+                            <img src="images/car4.png" alt="">
+                            <div class="item-text">
+                                <h4>Nissan GT-R</h4>
+                                <p>Sport Car</p>
+                            </div>
+                            <div class="item-price">
+                                <p>20 July</p>
+                                <strong>$80.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+    </div>
+    <!-- Gắn file JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
