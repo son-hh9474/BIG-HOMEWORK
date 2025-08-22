@@ -749,7 +749,7 @@ body {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
 
     .header {
         flex-direction: row;
