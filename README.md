@@ -15,14 +15,20 @@ Website chạy theo thứ tự trang web từ trái qua phải trong file figma
 
 ```bash
 .
-├── .git
-├── ảnh/                     # Chứa ảnh chụp giao diện để đưa vào README
-├── Detail_car_rent/         # Trang chi tiết thuê xe
-│   ├── css/
-│   └── images/
-├── Payment_car_rent/        # Trang thanh toán
-│   └── css/
-├── Dashboard_car_rent/      # Trang dashboard chính
-│   └── images/
-├── images/                  # Ảnh dùng chung
-└── css/                     # File CSS dùng chung
+├── ảnh/  #ảnh cho trang chủ và trang category 
+├── index.html/
+├── category car rent.html/                  
+└── Detail_car_rent/    # trang chi tiết thuê xe    
+    ├── css/                
+    ├── images/              
+    └── Payment_car_rent/ # trang thanh toán
+        ├── Payment_car_rent.html
+        ├── css
+        ├── images
+        └── Dashboard_car_rent # trang dành cho admin
+            ├── Dashboard_car_rent.html
+            ├── style.css
+            ├── images
+            └── scripts.js
+                 
+                
